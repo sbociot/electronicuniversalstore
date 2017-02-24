@@ -33,6 +33,6 @@
 .header_menu div{
   display: inline-block;
 }
-.main_menu{
-  
+input[type=text]{
+  display: block;
 }
