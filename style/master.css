@@ -1,7 +1,35 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 .logo{
+  width: 30%;
+  vertical-align: middle;
+}
+.menu_container li {
+  display: inline-block;
+}
+.menu_container{
+  width: 70%;
+}
+.menu_container li:not(:first-of-type){
+  margin-right: 10px;
+}
+.user_login{
+  width: 54%;
+}
+.logo_container{
   width: 10%;
+  vertical-align: middle;
+}
+.logo{
+  width: 100%;
+}
+.wrapper_menu{
+  width: 89%;
+}
+.header_menu div{
+  display: inline-block;
 }
