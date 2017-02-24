@@ -1,0 +1,12 @@
+*{
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu_container li{
+  display: inline-block;
+}
+.logo {
+  width: 10%;
+}
