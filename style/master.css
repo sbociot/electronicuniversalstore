@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 .logo{
   width: 30%;
@@ -35,4 +36,30 @@
 }
 input[type=text]{
   display: block;
+}
+/*Les icones de categorie*/
+.icon {
+  width: 100%;
+  padding: 20px;
+}
+.icon_wrapper {
+  width: 50%;
+  margin: 5%;
+}
+.icon_wrapper:first-of-type {
+  margin-left: 50%;
+}
+.icon_wrapper:nth-of-type(4) {
+  margin-right: 50%;
+}
+.icon_wrapper li:nth-of-type(2) {
+  text-align: center;
+  text-transform: uppercase;
+}
+.image_categorie {
+  width: 100%;
+  background: #F5F5F5;
+}
+.image_categorie .categorie_icon {
+  display: inline-block;
 }

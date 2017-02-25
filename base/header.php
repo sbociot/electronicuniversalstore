@@ -7,5 +7,3 @@
   </head>
   <body>
       <?php require_once 'base/menu.php'; ?>
-  </body>
-</html>
