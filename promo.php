@@ -5,13 +5,11 @@ define('ARTICLE_IMG_PATH', 'images/');
 ?>
 
     <div id="promotion">
-
 <?php foreach ($categories as $id => $article) { ?>
     <figure>
         <h2><?= $article['nom']?></h2>
         <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt="" />
         <figcaption><?= utf8_encode($article['description'])?></figcaption>
-
         <h4>Prix:</h4>
         <p><?= $article['prix']?></p>
         <h4>Prix avec taxes:</h4>
@@ -22,6 +20,5 @@ define('ARTICLE_IMG_PATH', 'images/');
         <p><?= $article['livraison']?></p>
 
     </figure>
-
     </div>
 <?php }?>
