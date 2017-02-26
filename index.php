@@ -4,8 +4,9 @@ require_once'base/menu.php';
 require_once'acces/icon.php';
 define('ICON_PATH', 'images/icons/');
  ?>
- <h1>Magasinez les AUBAINES par catégories</h1>
+
 <div class="image_categorie">
+   <h1>Magasinez les AUBAINES par catégories</h1>
   <?php foreach ($myicon as $key => $value) {?>
     <a href="aubaine_choix.php?aubaine=<?= $value['name'] ?>">
     <div class="categorie_icon">
@@ -16,4 +17,5 @@ define('ICON_PATH', 'images/icons/');
     </div>
     </a>
   <?php }  ?>
+
 </div>
