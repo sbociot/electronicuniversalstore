@@ -92,9 +92,14 @@ input[type=text]{
 
 footer {
   width: 80%;
+  background-color: red;
 }
 
-div.social {
+.social {
   display: inline-block;
+
+}
+
+div.social a {
   width: 20%;
 }
