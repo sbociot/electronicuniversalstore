@@ -39,7 +39,7 @@ input[type=text]{
   display: block;
 }
 /*Les icones de categorie*/
-.icon {
+/*.icon {
   width: 100%;
   padding: 20px;
 }
@@ -60,6 +60,22 @@ input[type=text]{
 .image_categorie {
   width: 100%;
   background: #F5F5F5;
+}
+.image_categorie .categorie_icon {
+  display: inline-block;
+}*/
+.icon_wrapper{
+  width: 45%;
+}
+.icon_wrapper li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon_wrapper li:first-of-type {
+  width: 25%;
+}
+.icon {
+  width: 100%;
 }
 .image_categorie .categorie_icon {
   display: inline-block;
