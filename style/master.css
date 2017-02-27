@@ -43,9 +43,14 @@ body {
 .menu_container li:hover {
   background: white;
 }
+.menu_container li:hover a {
+  border-bottom: 1px solid black;
+
+}
 .menu_container li a {
   text-transform: uppercase;
   color: #4D4D4F;
+
 }
 
 .menu_container {
@@ -108,12 +113,11 @@ margin-right: 30%;
 
 
 footer {
-  /*background-color: red;*/
+  background: #003B64;
 }
 
 footer .social {
   width: 90%;
-  /*background-color: green;*/
   margin: auto;
 
 }
