@@ -69,22 +69,31 @@
 
 
 footer {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 footer .social {
   width: 90%;
-  background-color: green;
+  /*background-color: green;*/
   margin: auto;
 
 }
 
-footer aside {
-  width: 30%;
-  display: inline-block;
+footer article {
+    display: block;
+    width: 30%;
+    padding-left: 15px;
+    float: left;
+
+
 }
 
-footer aside ul,li {
+footer article:nth-of-type(1),
+footer article:nth-of-type(2) {
+    border-right: 2px solid darkgray;
+}
+
+footer article ul,li {
   list-style: none;
 }
 
