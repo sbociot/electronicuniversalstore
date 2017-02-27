@@ -18,6 +18,7 @@ require_once'acces/acces_serv.php';
         <p><?= $article['economiser']?></p>
         <h4>Livraison:</h4>
         <p><?= $article['livraison']?></p>
+
     </figure>
     </div>
 <?php }?>
