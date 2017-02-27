@@ -11,6 +11,8 @@
   </head>
   <body>
       <?php require_once 'base/menu.php'; ?>
-      <?php require_once 'base/footer.php'; ?>
+
+
+
   </body>
 </html>

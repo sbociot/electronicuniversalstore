@@ -80,3 +80,21 @@ input[type=text]{
 .image_categorie .categorie_icon {
   display: inline-block;
 }
+
+
+
+
+
+
+
+
+/*.....................footer..........................*/
+
+footer {
+  width: 80%;
+}
+
+div.social {
+  display: inline-block;
+  width: 20%;
+}
