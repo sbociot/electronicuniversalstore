@@ -1,7 +1,7 @@
 <footer>
 
         <article class="coordonees">
-            <h2>Nous Coordonnées</h2>
+            <h2>NOUS COORDONNÉES</h2>
             <h4><span itemprop="name">Electronic Universal Store</span></h4>
             <ul>
                 <li>255 Crémazie Est</li>
@@ -16,41 +16,41 @@
             </a>
             <p>info@centre-dentaire-de-l-est.com</p>
         </article>
+    <article class="social">
+
+        <h2>SOUTIEN DE COMMANDE</h2>
+        <a href="../contact.php">Contactez nous</a>
+        <h4>APPLIS MOBILES</h4>
+        <a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo">Appli pour iPhone</a>
+        <a href="https://play.google.com/store/apps"><img src="images/redes/android-logo.png"                                                          alt="android-logo">Appli pour Android</a>
+        <h4>Réseaux Sociaux</h4>
+        <a href="https://www.facebook.com/"><img src="images/redes/facebookicon.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/"><img src="images/redes/instagram.png" alt="instagram"></a>
+        <a href="https://twitter.com/"><img src="images/redes/twitter.png" alt="twitter"></a>
+        <a href="https://www.youtube.com/"><img src="images/redes/youtube.png" alt="youtube"></a>
+
+    </article>
         <article class="horaires">
-            <h2><span itemprop="name">Nos heures d'ouverture.</span></h2>
+            <h2><span itemprop="name">NOUS HEURES D` OUVERTURES</span></h2>
             <ul>
                     <h4>Lundi:</h4>
-                    <li>8h00 à 18h00</li>
+                    <li>8h00 à 20h00</li>
                     <h4>Mardi:</h4>
-                    <li>8h00 à 19h00</li>
+                    <li>8h00 à 21h00</li>
                     <h4>Mercredi:</h4>
-                    <li>8h00 à 17h00</li>
+                    <li>8h00 à 20h00</li>
                     <h4>Jeudi:</h4>
-                    <li>8h00 à 17h00</li>
+                    <li>8h00 à 21h00</li>
                     <h4>Vendredi:</h4>
-                    <li>FERMÉ</li>
+                    <li>8h00 à 17h00</li>
                     <h4>Samedi:</h4>
-                    <li>FERMÉ</li>
+                    <li>8h00 à 17h00</li>
                     <h4>Dimanche:</h4>
-                    <li>FERMÉ</li>
+                    <li>8h00 à 17h00</li>
             </ul>
-
-        </article>
-        <article class="social">
-
-            <h3>SOUTIEN DE COMMANDE</h3>
-            <a href="../contact.php">Contactez nous</a>
-            <h4>APPLIS MOBILES</h4>
-            <a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo">Appli pour
-                iPhone</a><a href="https://play.google.com/store/apps"><img src="images/redes/android-logo.png"
-                                                                     alt="android-logo">Appli pour Android</a>
-            <h4>Réseaux Sociaux</h4>
-            <a href="https://www.facebook.com/"><img src="images/redes/facebookicon.png" alt="facebook">Facebook</a>
-            <a href="https://www.instagram.com/"><img src="images/redes/instagram.png" alt="instagram">Instagram</a>
-            <a href="https://twitter.com/"><img src="images/redes/twitter.png" alt="twitter">Twitter</a>
-            <a href="https://www.youtube.com/"><img src="images/redes/youtube.png" alt="youtube">Youtube</a>
             <p>© 2017, Electronic Universal Store / Tous droits réservés.</p>
         </article>
+
 
 </footer>
 </body>

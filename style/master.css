@@ -100,36 +100,71 @@ body {
 }
 
 
-footer {
-  /*background-color: red;*/
-}
+/*..............................footer.................................*/
 
-footer .social {
-  width: 90%;
-  /*background-color: green;*/
-  margin: auto;
+footer {
+    width: 90%;
+    margin: 2% auto;
+    font-size: 12px;
 
 }
 
 footer article {
     display: block;
     width: 30%;
-    padding-left: 15px;
+    height: 100%;
     float: left;
-
-
+    padding: 0 5%;
 }
 
+footer article h2 {
+    margin-bottom: 5%;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+
+
+footer article a {
+    margin: 5% auto;
+
+}
 footer article:nth-of-type(1),
 footer article:nth-of-type(2) {
     border-right: 2px solid darkgray;
 }
 
-footer article ul,li {
-  list-style: none;
+
+footer article.coordonees {
+
 }
 
-footer .social img {
+footer article.horaires h4 {
+    width: 40%;
+    display: inline-block;
+}
+
+footer article.horaires ul li {
+    width: 50%;
+    display: inline-block;
+}
+
+footer article.social a img:nth-of-type(2),
+footer article.social a img:nth-of-type(3){
+    display: block;
+    width: 100%;
+
+
+
+}
+
+footer article.social h4 {
+    margin : 5% auto;
+}
+
+footer article.social img {
   display: inline-block;
-  width: 5%;
+  width: 10%;
 }
