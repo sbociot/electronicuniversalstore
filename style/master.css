@@ -66,3 +66,29 @@
     color: white;
     background: red
 }
+
+
+footer {
+  background-color: red;
+}
+
+footer .social {
+  width: 90%;
+  background-color: green;
+  margin: auto;
+
+}
+
+footer aside {
+  width: 30%;
+  display: inline-block;
+}
+
+footer aside ul,li {
+  list-style: none;
+}
+
+footer .social img {
+  display: inline-block;
+  width: 5%;
+}

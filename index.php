@@ -3,7 +3,7 @@ require_once'base/header.php';
 require_once'base/menu.php';
 require_once'acces/icon.php';
 define('ICON_PATH', 'images/icons/');
-require_once'base/footer.php';
+
  ?>
 
 <div class="image_categorie">
@@ -20,3 +20,4 @@ require_once'base/footer.php';
     </a>
   <?php }  ?>
 </div>
+<?php require_once'base/footer.php';?>
