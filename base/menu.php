@@ -9,7 +9,7 @@ $menu = array(
  ?>
 <nav class="herder_menu">
 <div class="logo_container">
-<img class="logo" src="<?=ARTICLE_IMG_PATH?>/electronicuniversalstorelogo.png" alt="Electronic Universal Store">
+<img class="logo" src="<?=ARTICLE_IMG_PATH?>electronicuniversalstorelogo.png" alt="Electronic Universal Store">
 </div>
 <ul class="menu_container">
   <?php foreach ($menu as $key => $value) {?>
