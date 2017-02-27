@@ -1,7 +1,7 @@
 <?php
-require_once 'acces/acces_serv.php';
-var_dump($categories);
-define('ARTICLE_IMG_PATH', 'images/');
+require_once'acces/acces_serv.php';
+// var_dump($categories);
+
 ?>
 
     <div id="promotion">
@@ -18,7 +18,6 @@ define('ARTICLE_IMG_PATH', 'images/');
         <p><?= $article['economiser']?></p>
         <h4>Livraison:</h4>
         <p><?= $article['livraison']?></p>
-
     </figure>
     </div>
 <?php }?>

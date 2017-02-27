@@ -1,3 +1,6 @@
+<?php
+define('ARTICLE_IMG_PATH', 'images/');
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -10,9 +13,16 @@
     <link  rel = "icon"  href = "images/favico/favicon-32x32.png" >
   </head>
   <body>
+    <div class="logo_container">
+      <ul class="header_wrapper">
+        <li><img class="logo" src="<?=ARTICLE_IMG_PATH?>electronicstoreu.png" alt="Electronic Universal Store"></li>
+        <li>
+          <form class="searbarengine" action="index.php" method="post">
+            <input type="search" name="search">
+            <input type="submit">
+          </form>
+        </li>
+        <li><img src="<?=ARTICLE_IMG_PATH?>online-store.png" alt="Panier"></li>
+      </ul>
+    </div>
       <?php require_once 'base/menu.php'; ?>
-
-
-
-  </body>
-</html>
