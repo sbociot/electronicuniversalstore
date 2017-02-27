@@ -2,10 +2,10 @@
 /**
  *
  */
-define('DB_HOST', 'localhost'); // Host DB
-define('DB_USERNAME', 'root'); // Host DB
-define('DB_PASSWORD', 'root'); // Host DB
-define('DB_NAME', 'shop'); // Host DB
+// define('DB_HOST', 'localhost'); // Host DB
+// define('DB_USERNAME', 'root'); // Host DB
+// define('DB_PASSWORD', 'root'); // Host DB
+// define('DB_NAME', 'shop'); // Host DB
 
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_errno) {

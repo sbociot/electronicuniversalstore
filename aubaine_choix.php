@@ -2,8 +2,8 @@
  require_once 'base/header.php';
  require_once 'base/menu.php';
  require_once 'acces/shop_acces_serv.php';
- var_dump($_GET['aubaine']);
- var_dump($data);
+ // var_dump($_GET['aubaine']);
+ // var_dump($data);
 
  ?>
 
