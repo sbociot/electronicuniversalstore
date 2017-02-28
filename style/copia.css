@@ -7,7 +7,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 body {
-  background: #F5F5F5;
+    background: #F5F5F5;
 }
 /*header*/
 .logo {
@@ -16,24 +16,24 @@ body {
     padding: 20px;
 }
 .logo_container {
-  width: 100%;
+    width: 100%;
 }
 .header_wrapper{
-  width: 90%;
-  vertical-align: middle;
-  margin-right: 5%;
-  margin-left: 5%;
-  background: #003B64;
+    width: 90%;
+    vertical-align: middle;
+    margin-right: 5%;
+    margin-left: 5%;
+    background: #003B64;
 }
 .header_wrapper li {
-  display: inline-block;
+    display: inline-block;
 }
 .header_wrapper li:first-of-type {
-  width: 50%;
+    width: 50%;
 }
 .header_wrapper li:last-of-type img {
-  width: 20%;
-  vertical-align: middle;
+    width: 20%;
+    vertical-align: middle;
 }
 
 .menu_container li {
@@ -41,17 +41,17 @@ body {
     padding: 20px;
 }
 .menu_container li:hover {
-  background: white;
+    background: white;
 }
 .menu_container li a {
-  text-transform: uppercase;
-  color: #4D4D4F;
+    text-transform: uppercase;
+    color: #4D4D4F;
 }
 
 .menu_container {
-  width: 35%;
-margin-left: 30%;
-margin-right: 30%;
+    width: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .menu_container li:not(:first-of-type) {
@@ -88,8 +88,8 @@ margin-right: 30%;
     color: black;
 }
 .icon_wrapper li a {
-  color: #003B64;
-  text-transform: uppercase;
+    color: #003B64;
+    text-transform: uppercase;
 }
 
 .image_categorie .categorie_icon {
@@ -110,96 +110,79 @@ margin-right: 30%;
 /*..............................footer.................................*/
 
 footer {
-    background-color: #003B64;
-    width: 90%;
-    height: 300px;
+    width: 100%;
     margin: 2% auto;
     font-size: 12px;
-    color: white;
 
 }
 
-footer div {
+footer article {
+    display: block;
     width: 33%;
+    /*height: 100%;*/
     float: left;
-    padding: 0 3% 0 5%;
+    padding: 0 3%;
 
 }
 
-footer h2 {
+footer article h2 {
     margin-bottom: 5%;
-    margin-top: 5%;
-}
-
-
-footer h4 {
-    margin: 0 2%;
-
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 10px;
     margin: 5% auto;
 }
 
-footer  a {
-    width: 10%;
+
+
+footer article a {
+    /*margin: 5% auto;*/
     font-size: 12px;
-    color: white;
-    padding: 2px;
 
 }
-
-footer li {
-    padding: 2px;
-}
-
-footer div.coordonees,
-footer div.social {
+footer article:nth-of-type(1),
+footer article:nth-of-type(2) {
     border-right: 2px solid darkgray;
 }
 
 
-footer div.coordonees a{
+footer article.coordonees a{
     margin: 5% auto;
 }
 
-footer div.horaires h4 {
+footer article.horaires h4 {
     width: 40%;
     display: inline-block;
-
 }
 
-footer div.horaires ul li {
+footer article.horaires ul li {
     width: 50%;
     display: inline-block;
-
 }
 
-footer div.social a:nth-of-type(2),
-footer div.social a:nth-of-type(3){
+footer article.social a:nth-of-type(2),
+footer article.social a:nth-of-type(3){
     display: block;
     width: 100%;
-    vertical-align: middle;
-    /*font-size: 15px;*/
 
 }
 
-footer div.social h4 {
+footer article.social h4 {
     margin : 5% auto;
 }
 
-footer div.social img {
-  display: inline-block;
-  width: 10%;
-   padding-right: 5px;
+footer article.social img {
+    display: inline-block;
+    width: 10%;
+    /*padding: 5%;*/
 }
 
 
-footer div.social a:nth-of-type(5),
-footer div.social a:nth-of-type(6),
-footer div.social a:nth-of-type(7){
+footer article.social a:nth-of-type(5),
+footer article.social a:nth-of-type(6),
+footer article.social a:nth-of-type(7){
 
-   margin-left: 5%;
+    margin-left: 5%;
 
 }

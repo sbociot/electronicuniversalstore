@@ -1,11 +1,12 @@
 <?php
 require_once'acces/acces_serv.php';
-// var_dump($categories);
+ var_dump($categorieS);
+define('ARTICLE_IMG_PATH', 'images/');
 
 ?>
 
     <div id="promotion">
-<?php foreach ($categories as $id => $article) { ?>
+<?php foreach ($categorieS as $id => $article) { ?>
     <figure>
         <h2><?= $article['nom']?></h2>
         <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt="" />
