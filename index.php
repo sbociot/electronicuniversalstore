@@ -1,7 +1,7 @@
 <?php
 require_once'base/header.php';
 require_once'base/menu.php';
-require_once'acces/icon.php';
+require_once'acces/acces_serv.php';
 define('ICON_PATH', 'images/icons/');
 
 

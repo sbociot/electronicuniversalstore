@@ -1,15 +1,16 @@
 <?php
  require_once 'base/header.php';
  require_once 'base/menu.php';
- require_once 'acces/shop_acces_serv.php';
+ require_once 'acces/acces_serv.php';
 
  // var_dump($_GET['aubaine']);
  // var_dump($data);
-
+/*$userSearch = ucfirst($_GET['search']);*/
+/*var_dump($userSearch);*/
  ?>
 
 <div class="aubaine_choix_user_wrapper">
-    <h1><?= $_GET['aubaine'] ?></h1>
+    <h1><?= $_GET['aubaine']  ?></h1>
   <?php
     foreach ($data as $key => $value) {
       if (array_key_exists('aubaine', $_GET) && in_array($_GET['aubaine'], $value)) {?>
