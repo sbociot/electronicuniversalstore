@@ -194,7 +194,7 @@ footer h2 {
 
 footer p {
     font-size: 12px;
-    margin: 5% auto;
+    /*margin: 5% auto;*/
 }
 
 footer  a {
@@ -215,18 +215,6 @@ footer div.coordonees a{
     margin: 5% auto;
 }
 
-footer div.horaires h4 {
-    width: 40%;
-    /*display: inline-block;*/
-
-}
-
-footer div.horaires table {
-    width: 100%;
-    text-align: center;
-
-
-}
 
 footer div.social ul#apli {
     margin-top: 20px;
@@ -235,11 +223,13 @@ footer div.social ul#apli {
 footer div.social ul#apli li {
     display: inline-block;
     width: 50%;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 
 }
 footer div.social ul#apli li img {
     width: 30px;
+    vertical-align: middle !important;
+    margin-right: 5px;
 }
 
 
@@ -253,15 +243,32 @@ footer div.social ul#redes li {
     display: inline-block;
 }
 /*footer div.social li a, #redes li {*/
-    /*width: 44px;*/
-    /*height: 44px;*/
-    /*display: block;*/
-    /*float: left;*/
+/*width: 44px;*/
+/*height: 44px;*/
+/*display: block;*/
+/*float: left;*/
 /*}*/
 footer div.social ul#redes li img {
     width: 40px;
     display: inline-block;
     margin-top: 5px;
+}
+
+footer div.horaires h4 {
+    width: 40%;
+    /*display: inline-block;*/
+
+}
+
+footer div.horaires table {
+    width: 100%;
+    text-align: center;
+
+
+}
+
+footer div.horaires p {
+    margin-top: 75px;
 }
 
 
