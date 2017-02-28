@@ -116,26 +116,29 @@ footer {
     margin: 2% auto;
     font-size: 12px;
     color: white;
+    text-align: center;
+    padding-bottom: 10px;
 
 }
 
 footer div {
     width: 33%;
     float: left;
-    padding: 0 3% 0 5%;
+
 
 }
+
+footer div.coordonees,
+footer div.social {
+    border-right: 2px solid darkgray;
+}
+
 
 footer h2 {
     margin-bottom: 5%;
     margin-top: 5%;
 }
 
-
-footer h4 {
-    margin: 0 2%;
-
-}
 
 footer p {
     font-size: 12px;
@@ -154,10 +157,6 @@ footer li {
     padding: 2px;
 }
 
-footer div.coordonees,
-footer div.social {
-    border-right: 2px solid darkgray;
-}
 
 
 footer div.coordonees a{
@@ -166,40 +165,69 @@ footer div.coordonees a{
 
 footer div.horaires h4 {
     width: 40%;
-    display: inline-block;
+    /*display: inline-block;*/
 
 }
 
-footer div.horaires ul li {
-    width: 50%;
-    display: inline-block;
-
-}
-
-footer div.social a:nth-of-type(2),
-footer div.social a:nth-of-type(3){
-    display: block;
+footer div.horaires table {
     width: 100%;
-    vertical-align: middle;
-    /*font-size: 15px;*/
+    text-align: center;
+
 
 }
-
-footer div.social h4 {
-    margin : 5% auto;
+footer div.social ul#apli li img {
+    width: 20px;
 }
 
-footer div.social img {
-  display: inline-block;
-  width: 10%;
-   padding-right: 5px;
-}
+/*footer ul#apli {*/
+    /*list-style-position: inside;*/
+
+/*}*/
+
+/*footer ul#apli li {*/
+   /*display: list-item;*/
+    /*vertical-align: top ;*/
+/*}*/
+
+/*footer div#social {*/
+    /*width: 100%;*/
+    /*margin: 5px auto;*/
+    /*!*display: inline-block;*!*/
+/*}*/
+
+/*footer div#social h3 {*/
+    /*padding: 10px 0;*/
+/*}*/
+
+/*footer div#social li {*/
+    /*!*display: inline-block;*!*/
+    /*float: left;*/
+/*}*/
+
+/*footer div#social li a {*/
+    /*display: block;*/
+    /*float: left;*/
+    /*width: 100px;*/
+/*}*/
 
 
-footer div.social a:nth-of-type(5),
-footer div.social a:nth-of-type(6),
-footer div.social a:nth-of-type(7){
+/*!*footer div.social h4 {*!*/
+    /*!*margin : 5px auto;*!*/
+/*!*}*!*/
 
-   margin-left: 5%;
+/*!*footer div.social a:nth-of-type(5),*!*/
+/*!*footer div.social a:nth-of-type(6),*!*/
+/*!*footer div.social a:nth-of-type(7){*!*/
+    /*!*!*height: auto;*!*!*/
+    /*!*margin-left: 5%;*!*/
+    /*!*padding-top: 5px;*!*/
 
-}
+/*!*}*!*/
+
+/*!*footer div.social img {*!*/
+  /*!*display: inline-block;*!*/
+  /*!*width: 10%;*!*/
+   /*!*padding-right: 5px;*!*/
+/*!*}*!*/
+
+
