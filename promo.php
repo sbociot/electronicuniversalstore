@@ -11,9 +11,9 @@ require_once'acces/acces_serv.php';
         <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt="" />
         <figcaption><?= utf8_encode($article['description'])?></figcaption>
         <h4>Prix:</h4>
-        <p><?= $article['prix']?></p>
+        <p></p>
         <h4>Prix avec taxes:</h4>
-        <p><?= $article['prix avec taxes']?></p>
+        <p></p>
         <h3>Economisez:</h3>
         <p><?= $article['economiser']?></p>
         <h4>Livraison:</h4>

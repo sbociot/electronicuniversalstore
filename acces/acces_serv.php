@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', '127.0.0.1'); // Host DB
-define('DB_USERNAME', 'root'); // Host DB
-define('DB_PASSWORD', ''); // Host DB
-define('DB_NAME', 'categorie'); // Host DB
+// define('DB_HOST', 'localhost'); // Host DB
+// define('DB_USERNAME', 'root'); // Host DB
+// define('DB_PASSWORD', ''); // Host DB
+// define('DB_NAME', 'shop'); // Host DB
 
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_errno) {
@@ -10,7 +10,7 @@ if ($mysqli->connect_errno) {
 }
 
 // Rédaction de la requete sur les catégories articles
-$query_str = 'SELECT * FROM `shop`'; // Sélection de toutes les catégories articles
+$query_str = 'SELECT * FROM `shop_categorie`'; // Sélection de toutes les catégories articles
 
 $res = $mysqli->query($query_str); // Exécution de la requête
 
