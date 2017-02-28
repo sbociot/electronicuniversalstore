@@ -158,7 +158,17 @@ margin-right: 30%;
     cursor: pointer;
 }
 
-/*Fin page Aubaine choix*/
+div.promo {
+    width: 90%;
+    margin: 5% auto;
+}
+
+div.promo img {
+    width: 20%;
+    display: inline-block;
+}
+
+
 /*..............................footer.................................*/
 
 footer {
