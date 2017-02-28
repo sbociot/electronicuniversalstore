@@ -1,6 +1,6 @@
 <?php
 require_once'acces/acces_serv.php';
-// var_dump($categories);
+ var_dump($categorieS);
 define('ARTICLE_IMG_PATH', 'images/');
 
 ?>

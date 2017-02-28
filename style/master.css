@@ -105,7 +105,58 @@ margin-right: 30%;
     background: #003B64;
     font-size: 50px;
 }
+/*Aubaine choix*/
+.aubaine_choix_user > img{
+    width:100%;
+    vertical-align: middle;
+}
+.aubaine_choix_user{
+    width: 20%;
+    margin:5%;
+    padding: 10px;
+}
+.aubaine_choix_user p {
+    background: #003B64;
+    width:100%;
+    text-align: center;
+    padding: 10px;
+}
+.aubaine_choix_user p a {
+    color:white;
 
+}
+.aubaine_choix_user_wrapper{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: white;
+}
+.aubaine_choix_user_wrapper .aubaine_choix_user {
+    display: inline-block;
+}
+.aubaine_choix_user_wrapper h1{
+    width:40%;
+    background:#003B64;
+    padding:10px;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 30%;
+    color: white;
+}
+.aubaine_choix_user h2 {
+    color: #003B64;
+}
+.aubaine_choix_user p:hover {
+    background: #F5F5F5;
+}
+.aubaine_choix_user p:hover a {
+    color :#003B64;
+    border-bottom: 1px solid #003B64;;
+}
+.aubaine_choix_user:hover {
+    background:#F5F5F5;
+    cursor: pointer;
+}
 
 div.promo {
     width: 90%;
@@ -229,5 +280,6 @@ footer div.horaires table {
 footer div.horaires p {
     margin-top: 75px;
 }
+
 
 
