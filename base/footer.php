@@ -22,11 +22,11 @@
         <a href="../contact.php">Contactez nous</a>
 
         <ul id="apli">
-            <li><a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo"></a>Appli pour
-                iPhone
+            <li><a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo">Appli pour
+                    iPhone</a>
             </li>
             <li><a href="https://play.google.com/store/apps"><img src="images/redes/android.png"
-                                                                  alt="android-logo"></a>Appli pour Android
+                                                                  alt="android-logo">Appli pour Android</a>
             </li>
         </ul>
 
