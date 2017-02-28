@@ -1,14 +1,14 @@
 <footer>
 
     <div class="coordonees">
-        <h2>NOUS COORDONNÉES</h2>
-        <h4><span itemprop="name">Electronic Universal Store</span></h4>
-        <ul>
-            <li>255 Crémazie Est</li>
-            <li>Montréal (Québec)</li>
-            <li>H2M 1M2</li>
-            <li>514 842-2426</li>
-            <li>info@centre-dentaire-de-l-est.com</li>
+        <h2><span itemprop="name">NOUS COORDONNÉES</span></h2>
+        <h4>Electronic Universal Store</h4>
+        <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <li><span itemprop="streetAddress">255 Crémazie Est</span></li>
+            <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
+            <li><span itemprop="postalCode">H2M 1M2</span></li>
+            <li><span itemprop="telephone">514 842-2426</span></li>
+            <li><span itemprop="email">info@centre-dentaire-de-l-est.com</span></li>
         </ul>
         <a href="https://goo.gl/maps/nUuwptRP9mH2">
             <iframe
@@ -25,7 +25,7 @@
             <li><a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo"></a>Appli pour
                 iPhone
             </li>
-            <li><a href="https://play.google.com/store/apps"><img src="images/redes/android-logo.png"
+            <li><a href="https://play.google.com/store/apps"><img src="images/redes/android.png"
                                                                   alt="android-logo"></a>Appli pour Android
             </li>
         </ul>
@@ -55,23 +55,23 @@
             </tr>
             <tr>
                 <th>Mercredi:</th>
-                <td>8h00 à 17h00</td>
+                <td>8h00 à 21h00</td>
             </tr>
             <tr>
                 <th>Jeudi:</th>
-                <td>8h00 à 17h00</td>
+                <td>8h00 à 21h00</td>
             </tr>
             <tr>
                 <th>Vendredi:</th>
-                <td>FERMÉ</td>
+                <td>8h00 à 17h00</td>
             </tr>
             <tr>
                 <th>Samedi:</th>
-                <td>FERMÉ</td>
+                <td>8h00 à 17h00</td>
             </tr>
             <tr>
                 <th>Dimanche:</th>
-                <td>FERMÉ</td>
+                <td>8h00 à 17h00</td>
             </tr>
         </table>
         <p>© 2017, Electronic Universal Store / Tous droits réservés.</p>
