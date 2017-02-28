@@ -17,7 +17,7 @@ define('ARTICLE_IMG_PATH', 'images/');
       <ul class="header_wrapper">
         <li><img class="logo" src="<?=ARTICLE_IMG_PATH?>electronicstoreu.png" alt="Electronic Universal Store"></li>
         <li>
-          <form class="searbarengine" action="index.php" method="post">
+          <form class="searbarengine" action="shop.php" method="post">
             <input type="search" name="search">
             <input type="submit">
           </form>

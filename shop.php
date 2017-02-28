@@ -4,6 +4,7 @@ require_once'base/menu.php';
 require_once'acces/icon.php';
 define('ICON_PATH', 'images/icons/');
 require_once'acces/shop_acces_serv.php';
+var_dump($_POST);
 
 ?>
 <div class="image_categorie">
