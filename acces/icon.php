@@ -2,17 +2,29 @@
 /**
  *
  */
-define('DB_HOST', '127.0.0.1'); // Host DB
+define('DB_HOST', 'localhost'); // Host DB
+define('DB_USERNAME', 'root'); // Host DB
+define('DB_PASSWORD', 'root'); // Host DB
+define('DB_NAME', 'shop'); // Host DB
+define('DB_PORT', '8888');
+/* Dervys
+ * define('DB_HOST', '127.0.0.1'); // Host DB
 define('DB_USERNAME', 'root'); // Host DB
 define('DB_PASSWORD', ''); // Host DB
 define('DB_NAME', 'categorie'); // Host DB
 define('DB_PORT', '8888');
+ * */
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_errno) {
     echo "Echec lors de la connexion à MySQL : ", $mysqli->connect_error;
 }
 // Rédaction de la requete
+/*steve database*/
+$query_str = 'SELECT * FROM shop_icon'; // Sélection de tous les articles
+/*dervys
+
 $query_str = 'SELECT * FROM gadget'; // Sélection de tous les articles
+*/
 
 $res = $mysqli->query($query_str); // xécution de la requête
 
