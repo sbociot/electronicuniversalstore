@@ -12,7 +12,7 @@
 <div class="aubaine_choix_user_wrapper">
     <h1><?= $_GET['aubaine']  ?></h1>
   <?php
-    foreach ($data as $key => $value) {
+    foreach ($aubainesCategorie as $key => $value) {
       if (array_key_exists('aubaine', $_GET) && in_array($_GET['aubaine'], $value)) {?>
           <div class="aubaine_choix_user">
         <h2><?=$value['nom']?></h2>
