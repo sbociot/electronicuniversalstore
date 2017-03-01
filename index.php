@@ -20,7 +20,7 @@ define('ICON_PATH', 'images/icons/');
 </div>
 <div class="">
   <?php
-  //  require_once'promo.php'; 
+    require_once'promo.php';
    ?>
 
 </div>
