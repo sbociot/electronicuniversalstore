@@ -9,7 +9,11 @@ define('ARTICLE_IMG_PATH', 'images/');
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <meta name="robots" content="index,follow" >
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style/master.css">
+
+      <link rel="stylesheet" href="style/master.css">
+    <!--
+      <link rel="stylesheet" href="style/master-form.css">
+    -->
     <link  rel = "icon"  href = "images/favico/favicon-32x32.png" >
   </head>
   <body>
