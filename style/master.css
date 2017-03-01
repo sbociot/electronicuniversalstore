@@ -163,69 +163,54 @@ margin-right: 30%;
     width: 90%;
     margin: auto;
     overflow: hidden;
+    background-color: white;
 }
 
 #slider {
     position: relative;
-    width: 1080%;
+    width: 1000%;
     animation-name: slidy;
-    animation-duration: 36s;
+    animation-duration: 15s;
+
 }
 
 div.promo_carrusel div#slider figure {
+    background-color: #003B64;
+    color: white;
+    text-align: center;
     position: relative;
-    width: 10%;
+    width: 5%;
+    height: 230px;
+   padding: 5px;
     float: left;
 
 }
 
+div.promo_carrusel div#slider img {
+    /*margin-left: 25%;*/
+    width: 20%;
+}
+
 @-webkit-keyframes slidy {
-    0% { left: 0%; }
-    5% { left: 0%; }
-    10% { left: -100%; }
-    15% { left: -100%; }
-    20% { left: -200%; }
-    25% { left: -200%; }
-    30% { left: -300%; }
-    35% { left: -300%; }
-    40% { left: -400%; }
-    45% { left: -400%; }
-    50% { left: -500%; }
-    55% { left: -500%; }
-    60% { left: -600%; }
-    65% { left: -600%; }
-    70% { left: -700%; }
-    75% { left: -700%; }
-    80% { left: -800%; }
-    85% { left: -800%; }
-    90% { left: -900%; }
-    95% { left: -900%; }
-    100% { left: -1000%; }
+    0% { left: 0; }
+    16.70% { left: 0; }
+    33.40% { left: -100%; }
+    50.1% { left: -200%; }
+    66.80% { left: -300%; }
+    83.50% { left: -400%; }
+    100% { left: -500%; }
 
 }
 
 @keyframes slidy {
-    0% { left: 0%; }
-    5% { left: 0%; }
-    10% { left: -100%; }
-    15% { left: -100%; }
-    20% { left: -200%; }
-    25% { left: -200%; }
-    30% { left: -300%; }
-    35% { left: -300%; }
-    40% { left: -400%; }
-    45% { left: -400%; }
-    50% { left: -500%; }
-    55% { left: -500%; }
-    60% { left: -600%; }
-    65% { left: -600%; }
-    70% { left: -700%; }
-    75% { left: -700%; }
-    80% { left: -800%; }
-    85% { left: -800%; }
-    90% { left: -900%; }
-    95% { left: -900%; }
-    100% { left: -1000%; }
+    0% { left: 0; }
+    16.70% { left: 0; }
+    33.40% { left: -100%; }
+    50.1% { left: -200%; }
+    66.80% { left: -300%; }
+    83.50% { left: -400%; }
+    100% { left: -500%; }
+
 }
 
 /*div.promo_carrusel {*/
