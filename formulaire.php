@@ -1,6 +1,9 @@
-
 <?php
+require_once'base/header.php';
+require_once'base/menu.php';
 
+
+define('ICON_PATH', 'images/icons/');
 ?>
 <?php
 $liste_ville = array('choisir.', 'Montreal', 'Gâtineau', 'Sherbrooke', 'Quebec');
@@ -61,9 +64,7 @@ if (array_key_exists('saisi_password2', $_POST)) {
         $password2_valide = false;
     }
 }
-if ($password !== $password2) {
-    echo "<p>les deux mot de pass ne sont pas identique</p>";
-}
+
 
 /******/
 
@@ -89,13 +90,16 @@ if ($reception && empty($ville)) {
 /**********************************************/
 
 if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide && $telephone_valide
-    && $ville_valide && $password_valide && $password2_valide
+    && $ville_valide
 ) {
     // Les données de formulaire sont valides
     header('Location:inscrire.php');
     exit;
 }
 ?>
+<head>
+    <link rel="stylesheet" href="style/master.css">
+</head>
 <body>
 <div id="wrapper" class="row">
     <div class="col-9">
@@ -144,25 +148,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
             </div>
 
-            <div class="<?= $password_valide ? '' : 'invalid' ?>">
-                <label for="saisi_password">Mot De Passe: </label>
-                <input type="password" id="saisi_password" name="saisi_password" value="<?= $password ?>">
-                <?php
-                if (!$password_valide) {
-                    echo "<p>veuillez indiquer un mot de passe de 8 caracteres minimum</p>";
 
-                }
-                ?>
-            </div>
-            <div class="<?= $password2_valide ? '' : 'invalid' ?>">
-                <label for="saisi_password2">confirmer le Mot De Passe: </label>
-                <input type="password" id="saisi_password2" name="saisi_password2" value="<?= $password2 ?>">
-                <?php
-                if (!$password2_valide) {
-                    echo "<p>les deux mots de passe ne sont pas identique</p>";
-                }
-                ?>
-            </div>
             <div class="<?= $sexe_valide ? '' : 'invalid' ?>">
                 <label for="sexe">Sexe: </label>
                 Homme <input type="radio" name="sexe[]" id="sexe" value="H">
@@ -195,11 +181,16 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 </select>
             </div>
             <div>
-                <input id="submit" type="submit" value="Inscription">
+                <input id="submit" type="submit" value="reservation">
             </div>
 
         </form>
     </div>
+</div>
+<div class="footer">
+<?php
+require_once'base/footer.php';
+?>
 </div>
 
 
