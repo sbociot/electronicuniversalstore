@@ -1,7 +1,7 @@
 <?php
 require_once'base/header.php';
 require_once'base/menu.php';
-require_once'acces/icon.php';
+require_once'acces/acces_serv.php';
 define('ICON_PATH', 'images/icons/');
 
 
@@ -19,7 +19,9 @@ define('ICON_PATH', 'images/icons/');
   <?php }  ?>
 </div>
 <div class="">
-  <?php require_once'promo.php'; ?>
+  <?php
+  //  require_once'promo.php'; 
+   ?>
 
 </div>
 <?php require_once'base/footer.php';?>

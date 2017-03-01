@@ -93,12 +93,12 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
     && $ville_valide
 ) {
     // Les données de formulaire sont valides
-    header('Location:inscrire.php');
+    header('Location:contact.php');
     exit;
 }
 ?>
 <head>
-    <link rel="stylesheet" href="style/master.css">
+
 </head>
 <body>
 <div id="wrapper" class="row">
