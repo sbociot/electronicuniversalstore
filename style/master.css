@@ -6,8 +6,9 @@
     list-style: none;
     font-family: 'Noto Sans', sans-serif;
 }
+
 body {
-  background: #F5F5F5;
+  background: white;
 }
 /*header*/
 .logo {
@@ -161,22 +162,35 @@ margin-right: 30%;
 
 .promo_carrusel {
     width: 90%;
-    margin: auto;
+    margin: auto auto 60px auto;
     overflow: hidden;
+<<<<<<< HEAD
     background-color: white;
+=======
+    /*background-color: white;*/
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 }
 
 #slider {
     position: relative;
     width: 1000%;
     animation-name: slidy;
+<<<<<<< HEAD
     animation-duration: 15s;
+=======
+    animation-duration: 20s;
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 
 }
 
 div.promo_carrusel div#slider figure {
+<<<<<<< HEAD
     background-color: #003B64;
     color: white;
+=======
+    background-color: rgba(0, 59, 100, 0.5);
+    color: #003B64;
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
     /*text-align: center;*/
     position: relative;
     width: 5%;
@@ -185,7 +199,47 @@ div.promo_carrusel div#slider figure {
     float: left;
 
 }
+div.promo_carrusel div#slider a {
+    color: #003B64;
+}
 
+div.promo_carrusel div#slider a:hover{
+    text-decoration: underline;
+}
+
+div.promo_carrusel div#slider img {
+    margin-left: 25px;
+    margin-top: 6px;
+    /*width: 20%;*/
+}
+
+
+div.promo_carrusel div#slider div.slider_droit {
+    width: 50%;
+    float: right;
+    padding-top: 40px;
+}
+
+div.promo_carrusel div#slider div.slider_droit h4 {
+    width: 12%;
+    float: left;
+}
+div.promo_carrusel div#slider div.slider_droit p {
+    width: 50%;
+    float: left;
+}
+
+div.promo_carrusel div#slider div.slider_droit h2 {
+    color: #ff6855;
+    text-shadow: 3px 3px 5px #fffcf9;
+    /*6px 6px 5px #ffc3c1,*/
+    /*9px 9px 5px #fffcf9;*/
+    font-size: xx-large;
+    padding: 60px 0;
+}
+
+
+<<<<<<< HEAD
 div.promo_carrusel div#slider img {
     margin-left: 25px;
     margin-top: 6px;
@@ -229,6 +283,36 @@ div.promo_carrusel div#slider div#slider_droit h2 {
     83.50% { left: -400%; }
     100% { left: -500%; }
 
+=======
+@-webkit-keyframes slidy {
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
+
+
+}
+
+@keyframes slidy {
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 }
 
 /*..............................footer.................................*/
@@ -314,12 +398,7 @@ footer div.social ul#redes li {
     width: 20%;
     display: inline-block;
 }
-/*footer div.social li a, #redes li {*/
-/*width: 44px;*/
-/*height: 44px;*/
-/*display: block;*/
-/*float: left;*/
-/*}*/
+
 footer div.social ul#redes li img {
     width: 40px;
     display: inline-block;
@@ -352,11 +431,20 @@ footer div.horaires p {
 }
 
 
+<<<<<<< HEAD
 /*.....HEAD....*/
 
 
 
 /*page formulaire */
+=======
+/*.....HEAD..............................*/
+
+/*.................yunes................*/
+
+/*page formulaire */
+
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 .footer{
     display: block;
 }
@@ -374,6 +462,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+<<<<<<< HEAD
 /*Partie responsive page acceuil*/
 @media only screen and (max-width: 414px)  {
     .menu_container {
@@ -398,6 +487,8 @@ input[type=text], select {
 		margin: 10%;
 	}
     /*fin partie reponsive pour la page acceuil*/
+=======
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 }
 
 #submit {
@@ -446,7 +537,11 @@ input[type=text], select {
         margin-left: 15%;
     }
 }
+<<<<<<< HEAD
 
+=======
+/*....................yunnes............*/
+>>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 @media only screen and (max-width:768px ){
     #wrapper{
         width: 100%;
