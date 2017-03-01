@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', '127.0.0.1'); // Host DB
+define('DB_HOST', 'localhost'); // Host DB
 define('DB_USERNAME', 'root'); // Host DB
-define('DB_PASSWORD', ''); // Host DB
-define('DB_NAME', 'categorie'); // Host DB
+define('DB_PASSWORD', 'root'); // Host DB
+define('DB_NAME', 'shop'); // Host DB
 
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_errno) {
@@ -66,23 +66,7 @@ if ($res && ($res->num_rows > 0)) {
         // $categories[$article_cat['id']] = $article_cat;
     }
 }
-// Dump de toutes le données
-// var_dump($data);
 
-// Que les article de la catégorie 1
-// $query_str = 'SELECT * FROM article WHERE category_id=1'; // Sélection des articles de categorie 1
-// $res = $mysqli->query($query_str); // xécution de la requête
-//
-// // Chargement des données, ligne par ligne (boucle while)
-// $data = array();
-// if ($res && ($res->num_rows > 0)) {
-//     while ($article = $res->fetch_assoc()) {
-//         $data[$article['id']] = $article;
-//     }
-// }
-// // Dump de toutes le données
-// var_dump($data);
-//
 $myicon = array();
 $query_str = 'SELECT * FROM icon_shop';
 $result = $mysqli->query($query_str);
@@ -110,23 +94,7 @@ if ($res && ($res->num_rows > 0)) {
         // $categories[$article_cat['id']] = $article_cat;
     }
 }
-// Dump de toutes le données
-// var_dump($data);
 
-// Que les article de la catégorie 1
-// $query_str = 'SELECT * FROM article WHERE category_id=1'; // Sélection des articles de categorie 1
-// $res = $mysqli->query($query_str); // xécution de la requête
-//
-// // Chargement des données, ligne par ligne (boucle while)
-// $data = array();
-// if ($res && ($res->num_rows > 0)) {
-//     while ($article = $res->fetch_assoc()) {
-//         $data[$article['id']] = $article;
-//     }
-// }
-// // Dump de toutes le données
-// var_dump($data);
-//
 $aubainesCategorie = array();
 $query_str = 'SELECT * FROM shop_categorie';
 $result = $mysqli->query($query_str);
@@ -155,25 +123,3 @@ if ($res && ($res->num_rows > 0)) {
         $categories[$article_cat['id']] = $article_cat;
     }
 }
-//var_dump($categories);
-
-/**
- * Fournit un tableu d'article
- * @return array
- */
-//function get_articles($where = '') {
-//    global $mysqli;
-//    // Rédaction de la requete sur les articles
-//    $query_str = 'SELECT * FROM `article` ' . $where; // Sélection de tous les articles
-//
-//    $res = $mysqli->query($query_str); // xécution de la requête
-//
-//    // Chargement des données, ligne par ligne (boucle while)
-//    $data = array();
-//    if ($res && ($res->num_rows > 0)) {
-//        while ($article = $res->fetch_assoc()) {
-//            $data[$article['id']] = $article;
-//        }
-//    }
-//    return $data;
-//}
