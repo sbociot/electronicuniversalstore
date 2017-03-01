@@ -339,12 +339,7 @@ footer div.social ul#redes li {
     width: 20%;
     display: inline-block;
 }
-/*footer div.social li a, #redes li {*/
-/*width: 44px;*/
-/*height: 44px;*/
-/*display: block;*/
-/*float: left;*/
-/*}*/
+
 footer div.social ul#redes li img {
     width: 40px;
     display: inline-block;
@@ -377,11 +372,12 @@ footer div.horaires p {
 }
 
 
-/*.....HEAD....*/
+/*.....HEAD..............................*/
 
-
+/*.................yunes................*/
 
 /*page formulaire */
+
 .footer{
     display: block;
 }
@@ -447,7 +443,7 @@ input[type=text], select {
         margin-left: 15%;
     }
 }
-
+/*....................yunnes............*/
 @media only screen and (max-width:768px ){
     #wrapper{
         width: 100%;
