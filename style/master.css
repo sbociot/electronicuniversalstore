@@ -6,8 +6,9 @@
     list-style: none;
     font-family: 'Noto Sans', sans-serif;
 }
+
 body {
-  background: #F5F5F5;
+  background: white;
 }
 /*header*/
 .logo {
@@ -363,17 +364,129 @@ footer div.horaires table {
 
 }
 
+
+
+footer article.social img {
+  display: inline-block;
+  width: 10%;}
+    /*padding: 5%;*/
+
 footer div.horaires p {
     margin-top: 75px;
+
 }
 
-@media only screen and (max-width: 414px)  {
-	.categorie_icon {
-		width: 28%;
-		margin: 10%;
-	}
-	.image_categorie .categorie_icon{
-		margin: 10%;
-	}
+
+/*.....HEAD....*/
+
+
+
+/*page formulaire */
+.footer{
+    display: block;
+}
+
+
+/*formulaire page service*/
+label{
+    display: block;
+}
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+.col-9{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+@media only screen and (max-width: 960px){
+    #wrapper{
+        width: 100%;
+    }
+    .col-9{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+    #submit{
+        width:calc(100% / 2);
+    }
+    input[type=text],#birthday {
+        width:calc(100% / 2);
+        margin-left: 13%;
+    }
+    label{
+        display: block;
+        color: blue;
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width:768px ){
+    #wrapper{
+        width: 100%;
+    }
+    .ecrire{
+        width: 100%;
+    }
+    .col-9{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+  #submit{
+        width: 70%;
+        margin-left: 10%;
+    }
+    input[type=text] {
+        width:calc(100% / 2);
+    }
+
+
+    label{
+        display: block;
+        color: lightcoral;
+        margin-left: 15%;
+    }
+    section{
+        margin-left: 30%;
+    }
+
+
+
+}
+
+/*contact*/
+.conatact{
+    width: 40%;
+    padding: 3%;
 }
 
