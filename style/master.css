@@ -343,5 +343,13 @@ footer div.horaires p {
     margin-top: 75px;
 }
 
-
+@media only screen and (max-width: 414px)  {
+	.categorie_icon {
+		width: 28%;
+		margin: 10%;
+	}
+	.image_categorie .categorie_icon{
+		margin: 10%;
+	}
+}
 
