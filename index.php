@@ -6,6 +6,12 @@ require_once 'acces/acces_serv.php';
 define('ICON_PATH', 'images/icons/');
  ?>
 
+<div class="promo_carrusel">
+    <?php
+    require_once'promo.php';
+    ?>
+</div>
+
 <div class="image_categorie">
    <h1>Magasinez les AUBAINES par catégories</h1>
   <?php foreach ($myicon as $key => $value) {?>
@@ -17,9 +23,5 @@ define('ICON_PATH', 'images/icons/');
       </div>
   <?php }  ?>
 </div>
-<div class="promo_carrusel">
-  <?php
-    require_once'promo.php';
-   ?>
-</div>
+
 <?php require_once'base/footer.php';?>

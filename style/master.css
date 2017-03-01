@@ -161,22 +161,22 @@ margin-right: 30%;
 
 .promo_carrusel {
     width: 90%;
-    margin: auto;
+    margin: auto auto 60px auto;
     overflow: hidden;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 #slider {
     position: relative;
     width: 1000%;
     animation-name: slidy;
-    animation-duration: 15s;
+    animation-duration: 20s;
 
 }
 
 div.promo_carrusel div#slider figure {
-    background-color: #003B64;
-    color: white;
+    background-color: rgba(0, 59, 100, 0.5);
+    color: #003B64;
     /*text-align: center;*/
     position: relative;
     width: 5%;
@@ -184,6 +184,13 @@ div.promo_carrusel div#slider figure {
    padding: 5px;
     float: left;
 
+}
+div.promo_carrusel div#slider a {
+    color: #003B64;
+}
+
+div.promo_carrusel div#slider a:hover{
+    text-decoration: underline;
 }
 
 div.promo_carrusel div#slider img {
@@ -193,42 +200,59 @@ div.promo_carrusel div#slider img {
 }
 
 
-div.promo_carrusel div#slider div#slider_droit {
+div.promo_carrusel div#slider div.slider_droit {
     width: 50%;
     float: right;
-    margin-top: 55px;
+    padding-top: 40px;
 }
 
-div.promo_carrusel div#slider div#slider_droit h2 {
+div.promo_carrusel div#slider div.slider_droit h4 {
+    width: 12%;
+    float: left;
+}
+div.promo_carrusel div#slider div.slider_droit p {
+    width: 50%;
+    float: left;
+}
+
+div.promo_carrusel div#slider div.slider_droit h2 {
     color: #ff6855;
     text-shadow: 3px 3px 5px #fffcf9;
     /*6px 6px 5px #ffc3c1,*/
     /*9px 9px 5px #fffcf9;*/
     font-size: xx-large;
-    padding: 20px 0;
+    padding: 60px 0;
 }
 
 
 @-webkit-keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
+
 
 }
 
 @keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
-
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
 }
 
 /*..............................footer.................................*/
