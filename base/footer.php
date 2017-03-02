@@ -17,19 +17,15 @@
         </a>
     </div>
     <div class="social">
-
         <h2>SOUTIEN DE COMMANDE</h2>
         <a href="../contact.php">Contactez nous</a>
-
         <ul id="apli">
             <li><a href="http://www.apple.com/ca/fr/"><img src="images/redes/apple.png" alt="apple-logo">Appli pour
                     iPhone</a>
             </li>
-            <li><a href="https://play.google.com/store/apps"><img src="images/redes/android.png"
-                                                                  alt="android-logo">Appli pour Android</a>
+            <li><a href="https://play.google.com/store/apps"><img src="images/redes/android.png"                                                                alt="android-logo">Appli pour Android</a>
             </li>
         </ul>
-
         <h3>Réseaux Sociaux</h3>
         <ul id="redes">
                     <li><a href="https://www.facebook.com/"><img src="images/redes/facebookicon.png" alt="facebook"></a>
@@ -39,8 +35,6 @@
                     <li><a href="https://twitter.com/"><img src="images/redes/twitter.png" alt="twitter"></a></li>
                     <li><a href="https://www.youtube.com/"><img src="images/redes/youtube.png" alt="youtube"></a></li>
         </ul>
-
-
     </div>
     <div class="horaires">
         <h2><span itemprop="name">NOUS HEURES D` OUVERTURES</span></h2>
