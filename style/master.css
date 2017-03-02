@@ -61,7 +61,10 @@ margin-right: 30%;
 .menu_container li:not(:first-of-type) {
     margin-right: 10px;
 }
-
+/*formulaire login and logout Steve*/
+.login_user input[type=text] input[type=password] {
+    display: block;
+}
 
 /*Les aubaiones par categorie*/
 

@@ -33,7 +33,7 @@ require_once 'check_connect.php';
                            value="<?= array_key_exists('username',$_POST) ? $_POST['username'] : '' ?>"
                     />
                     <input type="password" name="password" id="password" value="" />
-                    <?php // Afficher un message dans le cas ou l'authentification n'a pas réussi
+                    <?php
                     if (array_key_exists('login_btn',$_POST)) { ?>
                         <p>Le pseudo et le mot de passe fournis ne concordent pas.</p>
                     <?php } ?>
