@@ -158,39 +158,26 @@ margin-right: 30%;
     background:#F5F5F5;
     cursor: pointer;
 }
-/*...................SLIDER..................*/
+/*...............DERVYS....SLIDER..................*/
 
 .promo_carrusel {
     width: 90%;
     margin: auto auto 60px auto;
     overflow: hidden;
-<<<<<<< HEAD
-    background-color: white;
-=======
     /*background-color: white;*/
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 }
 
 #slider {
     position: relative;
     width: 1000%;
     animation-name: slidy;
-<<<<<<< HEAD
-    animation-duration: 15s;
-=======
     animation-duration: 20s;
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 
 }
 
 div.promo_carrusel div#slider figure {
-<<<<<<< HEAD
-    background-color: #003B64;
-    color: white;
-=======
     background-color: rgba(0, 59, 100, 0.5);
     color: #003B64;
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
     /*text-align: center;*/
     position: relative;
     width: 5%;
@@ -204,7 +191,7 @@ div.promo_carrusel div#slider a {
 }
 
 div.promo_carrusel div#slider a:hover{
-    text-decoration: underline;
+    border-bottom: 3px solid #cda134;
 }
 
 div.promo_carrusel div#slider img {
@@ -239,7 +226,6 @@ div.promo_carrusel div#slider div.slider_droit h2 {
 }
 
 
-<<<<<<< HEAD
 div.promo_carrusel div#slider img {
     margin-left: 25px;
     margin-top: 6px;
@@ -262,28 +248,6 @@ div.promo_carrusel div#slider div#slider_droit h2 {
     padding: 20px 0;
 }
 
-
-@-webkit-keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
-
-}
-
-@keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
-
-=======
 @-webkit-keyframes slidy {
     0% 	    { left: 0; }
     16.70% 	{ left: 0; }
@@ -312,26 +276,27 @@ div.promo_carrusel div#slider div#slider_droit h2 {
     80%	    { left: -400%; }
     96.70% 	{ left: -400%; }
     100% 	{ left: -500%; }
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 }
+/*.........................FIN......SLIDER.......................*/
 
-/*..............................footer.................................*/
+/*.........................DERVYS.....FOOTER.................................*/
 
 footer {
     background-color: #003B64;
     width: 90%;
-    height: 300px;
-    margin: 2% auto;
+    min-height: 360px;
+    margin: 0 auto;
     font-size: 12px;
     color: white;
     text-align: center;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 
 }
 
 footer div {
     width: 33%;
     float: left;
+    margin: 2% auto;
 
 
 }
@@ -343,8 +308,7 @@ footer div.social {
 
 
 footer h2 {
-    margin-bottom: 5%;
-    margin-top: 5%;
+  padding-top: 2px;
 }
 
 
@@ -429,22 +393,15 @@ footer div.horaires p {
     margin-top: 75px;
 
 }
+/*...................FIN...FOOTER............*/
 
 
-<<<<<<< HEAD
-/*.....HEAD....*/
-
-
-
-/*page formulaire */
-=======
-/*.....HEAD..............................*/
-
-/*.................yunes................*/
+/*..............................................*/
+                /*PARTI.....YOUNES*/
+/*.................................................*/
 
 /*page formulaire */
 
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 .footer{
     display: block;
 }
@@ -462,8 +419,10 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-<<<<<<< HEAD
+}
+
 /*Partie responsive page acceuil*/
+
 @media only screen and (max-width: 414px)  {
     .menu_container {
         width: 90%;
@@ -487,8 +446,7 @@ input[type=text], select {
 		margin: 10%;
 	}
     /*fin partie reponsive pour la page acceuil*/
-=======
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
+
 }
 
 #submit {
@@ -537,11 +495,7 @@ input[type=text], select {
         margin-left: 15%;
     }
 }
-<<<<<<< HEAD
-
-=======
 /*....................yunnes............*/
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 @media only screen and (max-width:768px ){
     #wrapper{
         width: 100%;
@@ -556,7 +510,7 @@ input[type=text], select {
         margin-left: 13%;
         margin-right: 13%;
     }
-  #submit{
+    #submit{
         width: 70%;
         margin-left: 10%;
     }
@@ -574,7 +528,37 @@ input[type=text], select {
         margin-left: 30%;
     }
 
+    div.promo_carrusel {
+        display: none;
 
+    }
+
+    footer div.coordonees {
+        width: 100%;
+
+    }
+
+    footer div.coordonees h2 {
+        margin: auto;
+    }
+    footer div.coordonees a {
+        display: none;
+
+    }
+
+    footer div.social {
+        display: none;
+    }
+
+    footer div.horaires {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    footer div.horaires p {
+        margin-top: 5px;
+    }
 
 }
 

@@ -5,43 +5,19 @@ require_once'acces/acces_serv.php';
 
 ?>
 
-    <div id="slider">
-
 <div id="slider">
 
-<?php foreach ($categories as $id => $article) { ?>
- cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
+    <?php foreach ($categories as $id => $article) { ?>
 
-<?php foreach ($categories as $id => $article) { ?>
-    <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>" >
-    <figure>
-<<<<<<< HEAD
-        <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt="" />
-        <div id="slider_droit">
-        <h3><?= utf8_encode($article['nom'])?></h3>
-<!--        <figcaption>--><?//= utf8_encode($article['description'])?><!--</figcaption>-->
+        <figure>
+            <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>">
+                <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
+                <div class="slider_droit">
+                    <h3><?= utf8_encode($article['nom'])?></h3>
+                    <h4>Prix:</h4>
+                    <p><?= $article['prix']?></p>
 
-        <h4>Prix:</h4>
-        <p><?= $article['prix']?></p>
-<!--        <h4>Prix avec taxes:</h4>-->
-<!--        <p>--><?//= $article['prix avec taxes']?><!--</p>-->
-<!--        <h3>Economisez:</h3>-->
-        <h2><?= utf8_encode ($article['economiser'])?></h2>
-<!--        <h4>Livraison:</h4>-->
-<!--        <p>--><?//= utf8_encode ($article['livraison'])?><!--</p>-->
-        </div>
-    </figure>
-    </a>
-
-        <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>">
-        <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
-        <div class="slider_droit">
-        <h3><?= utf8_encode($article['nom'])?></h3>
-        <h4>Prix:</h4>
-        <p><?= $article['prix']?></p>
-
-        <h2><?= utf8_encode ($article['economiser'])?></h2>
-
+                    <h2><?= utf8_encode ($article['economiser'])?></h2>
 
         </div>
         </a>
