@@ -24,11 +24,11 @@ require_once 'check_connect.php';
         <li>
             <?php if (is_logged_in()) { ?>
                 <span>Salut <?= $_SESSION[PS_USERNAME] ?> !</span>
-                <form name="logout" method="post">
+                <form  class="login_user" name="logout" method="post">
                     <input type="submit" name="logout_btn" value="Déconnecter" />
                 </form>
             <?php } else { ?>
-                <form name="login" method="post">
+                <form class= "logout_user" name="login" method="post">
                     <input type="text" name="username" id="username"
                            value="<?= array_key_exists('username',$_POST) ? $_POST['username'] : '' ?>"
                     />
