@@ -8,72 +8,102 @@
 }
 
 body {
-  background: white;
+    background: white;
 }
+
 /*header*/
 .logo {
     width: 30%;
     vertical-align: middle;
     padding: 20px;
 }
+
 .logo_container {
-  width: 100%;
+    width: 100%;
 }
-.header_wrapper{
-  width: 90%;
-  vertical-align: middle;
-  margin-right: 5%;
-  margin-left: 5%;
-  background: #003B64;
+
+.header_wrapper {
+    width: 90%;
+    vertical-align: middle;
+    margin-right: 5%;
+    margin-left: 5%;
+    background: #003B64;
 }
+
 .header_wrapper li {
-  display: inline-block;
+    display: inline-block;
 }
-.header_wrapper li:first-of-type {
-  width: 50%;
-}
+
+
+
 .header_wrapper li:last-of-type {
-	width: 40px;
-	margin-left: 37%;
+    width: 40px;
+
 }
+
 .header_wrapper li:last-of-type img {
-  width: 100%;
-  vertical-align: middle;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .menu_container li {
     display: inline-block;
     padding: 20px;
 }
+
 .menu_container li:hover {
-  background: white;
+    background: white;
 }
+
 .menu_container li a {
-  text-transform: uppercase;
-  color: #4D4D4F;
+    text-transform: uppercase;
+    color: #4D4D4F;
 }
 
 .menu_container {
-  width: 35%;
-margin-left: 30%;
-margin-right: 30%;
+    width: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .menu_container li:not(:first-of-type) {
     margin-right: 10px;
 }
+
 /*formulaire login and logout Steve*/
-.login_user input[type=text] input[type=password] {
-    display: block;
+.login_user {
+    width: 50%;
+    transition: .4s ease;
+    transform: scale(0);
+    transform-origin: top left;
+}
+.login_user_scaleUpDown{
+    transform: scale(1);
+
+}
+.login_user > input[type=text],
+.login_user > input[type=password],
+.login_user > input[type=submit] {
+    width: 100%;
 }
 
+.user_login_container { /*l'image de log_in*/
+    width: 20%;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.header_wrapper li:nth-of-type(2) {
+    margin-left: 10%;
+}
+
+/*fin formulaire Steve*/
 /*Les aubaiones par categorie*/
 
 .image_categorie {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: white;
+    background-color: #F5F5F5;
 }
 
 .categorie_icon {
@@ -95,9 +125,10 @@ margin-right: 30%;
     text-align: center;
     color: black;
 }
+
 .icon_wrapper li a {
-  color: #003B64;
-  text-transform: uppercase;
+    color: #003B64;
+    text-transform: uppercase;
 }
 
 .image_categorie .categorie_icon {
@@ -113,61 +144,72 @@ margin-right: 30%;
     background: #003B64;
     font-size: 50px;
 }
+
 /*Aubaine choix*/
 
-.aubaine_choix_user > img{
-    width:100%;
+.aubaine_choix_user > img {
+    width: 100%;
     vertical-align: middle;
 }
-.aubaine_choix_user{
+
+.aubaine_choix_user {
     width: 20%;
-    margin:5%;
+    margin: 5%;
     padding: 10px;
 }
+
 .aubaine_choix_user p {
     background: #003B64;
-    width:100%;
+    width: 100%;
     text-align: center;
     padding: 10px;
 }
+
 .aubaine_choix_user p a {
-    color:white;
+    color: white;
 
 }
-.aubaine_choix_user_wrapper{
+
+.aubaine_choix_user_wrapper {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     background: white;
 }
+
 .aubaine_choix_user_wrapper .aubaine_choix_user {
     display: inline-block;
 }
-.aubaine_choix_user_wrapper h1{
-    width:40%;
-    background:#003B64;
-    padding:10px;
+
+.aubaine_choix_user_wrapper h1 {
+    width: 40%;
+    background: #003B64;
+    padding: 10px;
     text-align: center;
     margin-right: 30%;
     margin-left: 30%;
     color: white;
 }
+
 .aubaine_choix_user h2 {
     color: #003B64;
 }
+
 .aubaine_choix_user p:hover {
     background: #F5F5F5;
 }
+
 .aubaine_choix_user p:hover a {
-    color :#003B64;
+    color: #003B64;
     border-bottom: 1px solid #003B64;;
 }
+
 .aubaine_choix_user:hover {
-    background:#F5F5F5;
+    background: #F5F5F5;
     cursor: pointer;
 }
-/*...............DERVYS....SLIDER..................*/
 
+/*...............DERVYS....SLIDER..................*/
 
 .promo_carrusel {
     width: 90%;
@@ -195,6 +237,7 @@ div.promo_carrusel div#slider figure {
     float: left;
 
 }
+
 div.promo_carrusel div#slider a {
     color: #003B64;
 }
@@ -204,7 +247,6 @@ div.promo_carrusel div#slider img {
     margin-top: 6px;
     /*width: 40%;*/
 }
-
 
 div.promo_carrusel div#slider div.slider_droit {
     width: 45%;
@@ -216,6 +258,7 @@ div.promo_carrusel div#slider div.slider_droit h4 {
     width: 12%;
     float: left;
 }
+
 div.promo_carrusel div#slider div.slider_droit p {
     width: 50%;
     float: left;
@@ -230,36 +273,79 @@ div.promo_carrusel div#slider div.slider_droit h2 {
     padding: 60px 0;
 }
 
-
 @-webkit-keyframes slidy {
-    0% 	    { left: 0; }
-    16.70% 	{ left: 0; }
-    20%	    { left: -100%; }
-    36.70% 	{ left: -100%; }
-    40%	    { left: -200%; }
-    56.70% 	{ left: -200%; }
-    60%	    { left: -300%; }
-    76.70% 	{ left: -300%; }
-    80%	    { left: -400%; }
-    96.70% 	{ left: -400%; }
-    100% 	{ left: -500%; }
-
+    0% {
+        left: 0;
+    }
+    16.70% {
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    36.70% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    56.70% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    76.70% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    96.70% {
+        left: -400%;
+    }
+    100% {
+        left: -500%;
+    }
 
 }
 
 @keyframes slidy {
-    0% 	    { left: 0; }
-    16.70% 	{ left: 0; }
-    20%	    { left: -100%; }
-    36.70% 	{ left: -100%; }
-    40%	    { left: -200%; }
-    56.70% 	{ left: -200%; }
-    60%	    { left: -300%; }
-    76.70% 	{ left: -300%; }
-    80%	    { left: -400%; }
-    96.70% 	{ left: -400%; }
-    100% 	{ left: -500%; }
+    0% {
+        left: 0;
+    }
+    16.70% {
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    36.70% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    56.70% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    76.70% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    96.70% {
+        left: -400%;
+    }
+    100% {
+        left: -500%;
+    }
 }
+
 /*.........................FIN......SLIDER.......................*/
 
 /*.........................DERVYS.....FOOTER.................................*/
@@ -281,7 +367,6 @@ footer div {
     float: left;
     margin: 2% auto;
 
-
 }
 
 footer div.coordonees,
@@ -289,18 +374,16 @@ footer div.social {
     border-right: 2px solid darkgray;
 }
 
-
 footer h2 {
-  padding-top: 2px;
+    padding-top: 2px;
 }
-
 
 footer p {
     font-size: 12px;
     /*margin: 5% auto;*/
 }
 
-footer  a {
+footer a {
     width: 10%;
     font-size: 12px;
     color: white;
@@ -312,12 +395,9 @@ footer li {
     padding: 2px;
 }
 
-
-
-footer div.coordonees a{
+footer div.coordonees a {
     margin: 5% auto;
 }
-
 
 footer div.social ul#apli {
     margin-top: 20px;
@@ -339,18 +419,15 @@ footer div.social ul#apli li:hover {
 
 }
 
-
 footer div.social ul#apli li img {
     width: 30px;
     vertical-align: middle !important;
     margin-right: 5px;
 }
 
-
 footer div.social h3 {
     margin: 20px auto;
 }
-
 
 footer div.social ul#redes li {
     width: 20%;
@@ -381,63 +458,62 @@ footer div.horaires table {
     width: 100%;
     text-align: center;
 
-
 }
 
-
-
 /*footer div.social img {*/
-  /*display: inline-block;*/
-  /*width: 10%;}*/
-    /*!*padding: 5%;*!*/
+/*display: inline-block;*/
+/*width: 10%;}*/
+/*!*padding: 5%;*!*/
 
 footer div.horaires p {
     margin-top: 75px;
 
 }
+
 /*...................FIN...FOOTER............*/
 
-
 /*..............................................*/
-                /*PARTI.....YOUNES*/
+/*PARTI.....YOUNES*/
 /*.................................................*/
 
 /*page formulaire */
 
-.footer{
+.footer {
     display: block;
 }
 
-
 /*formulaire page service*/
 
-
 /*Partie responsive page acceuil*/
-@media only screen and (max-width: 414px)  {
+@media only screen and (max-width: 414px) {
     .menu_container {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
+
     .menu_container li {
         display: block;
-        width:100%;
+        width: 100%;
         text-align: center;
 
     }
+
     .menu_container li a {
         display: block;
     }
+
     .categorie_icon {
-		width: 28%;
-		margin: 10%;
-	}
-	.image_categorie .categorie_icon{
-		margin: 10%;
-	}
+        width: 28%;
+        margin: 10%;
+    }
+
+    .image_categorie .categorie_icon {
+        margin: 10%;
+    }
+
     /*fin partie reponsive pour la page acceuil*/
     /* ....RESPONSIVE FOOTER DERVYS...*/
-
     footer div.coordonees {
         width: 100%;
 
@@ -446,6 +522,7 @@ footer div.horaires p {
     footer div.coordonees h2 {
         margin: auto;
     }
+
     footer div.coordonees a {
         display: none;
 
@@ -481,13 +558,15 @@ footer div.horaires p {
 #submit:hover {
     background-color: #003B64;
 }
-.col-9{
+
+.col-9 {
     width: 90%;
     margin: auto;
     border-radius: 5px;
     background-color: #f2f2f2;
 
 }
+
 .col-9 #form {
     width: 80%;
     margin: auto;
@@ -499,7 +578,7 @@ div.invalid {
     margin: auto;
 }
 
-div.invalid label{
+div.invalid label {
     display: inline-block;
     width: 13%;
 }
@@ -509,8 +588,6 @@ div.invalid p {
     margin: auto;
     font-size: small;
 }
-
-
 
 div.invalid_choix {
     display: block;
@@ -528,17 +605,15 @@ div.submit {
 }
 
 /*div.invalid_choix1 label {*/
-    /*display: block;*/
-    /*width: 10%;*/
+/*display: block;*/
+/*width: 10%;*/
 /*}*/
 
-
-
-input#submit {
+#form input#submit {
     margin: auto;
 }
 
-input[type=text], select {
+#form input[type=text], select {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -548,72 +623,80 @@ input[type=text], select {
 }
 
 div.invalid_choix input#birthday,
-input#sexe {
+#form input#sexe {
     border: 1px solid #003B64;
 }
 
-
-@media only screen and (max-width: 960px){
-    #wrapper{
+@media only screen and (max-width: 960px) {
+    #wrapper {
         width: 100%;
     }
-    .col-9{
+
+    .col-9 {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
         /*margin-left: 13%;*/
         /*margin-right: 13%;*/
     }
-    #submit{
-        width:calc(100% / 2);
+
+    #submit {
+        width: calc(100% / 2);
     }
-    input[type=text],#birthday {
-        width:calc(100% / 2);
+
+    input[type=text], #birthday {
+        width: calc(100% / 2);
         margin-left: 13%;
     }
-    label{
+
+    label {
         display: block;
         color: blue;
         margin-left: 15%;
     }
 }
+
 /*....................yunnes............*/
-@media only screen and (max-width:768px ){
-    #wrapper{
+@media only screen and (max-width: 768px ) {
+    #wrapper {
         width: 100%;
     }
-    .ecrire{
+
+    .ecrire {
         width: 100%;
     }
-    .col-9{
+
+    .col-9 {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
         margin-left: 13%;
         margin-right: 13%;
     }
-    #submit{
+
+    #submit {
         width: 70%;
         margin-left: 10%;
     }
+
     input[type=text] {
-        width:calc(100% / 2);
+        width: calc(100% / 2);
     }
 
-
-    label{
+    label {
         display: block;
         color: lightcoral;
         margin-left: 15%;
     }
-    section{
+
+    section {
         margin-left: 30%;
     }
 
 }
 
 /*contact*/
-.conatact{
+.conatact {
     width: 40%;
     padding: 3%;
 }
