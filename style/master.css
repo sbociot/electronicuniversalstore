@@ -569,6 +569,10 @@ input#sexe {
         color: blue;
         margin-left: 15%;
     }
+    textarea{
+        width: calc(400%/2);
+    }
+
 }
 /*....................yunnes............*/
 @media only screen and (max-width:768px ){
@@ -590,7 +594,9 @@ input#sexe {
     input[type=text] {
         width:calc(100% / 2);
     }
-
+    textarea{
+        width: calc(400%/2);
+    }
 
     label{
         display: block;
