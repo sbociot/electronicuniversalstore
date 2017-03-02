@@ -15,7 +15,11 @@ define('ARTICLE_IMG_PATH', 'images/');
   <body>
     <div class="logo_container">
       <ul class="header_wrapper">
-        <li><img class="logo" src="<?=ARTICLE_IMG_PATH?>electronicstoreu.png" alt="Electronic Universal Store"></li>
+        <li>
+            <a href="index.php">
+                <img class="logo" src="<?=ARTICLE_IMG_PATH?>electronicstoreu.png" alt="Electronic Universal Store">
+            </a>
+        </li>
         <!--<li>
           <form class="searbarengine" action="aubaine_choix.php" method="get">
             <input type="search" name="search">
