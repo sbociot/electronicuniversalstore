@@ -5,13 +5,12 @@ require_once'acces/acces_serv.php';
 
 ?>
 
-<<<<<<< HEAD
     <div id="slider">
-=======
+
 <div id="slider">
 
 <?php foreach ($categories as $id => $article) { ?>
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
+ cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
 
 <?php foreach ($categories as $id => $article) { ?>
     <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>" >
@@ -33,7 +32,7 @@ require_once'acces/acces_serv.php';
         </div>
     </figure>
     </a>
-=======
+
         <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>">
         <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
         <div class="slider_droit">
@@ -42,7 +41,7 @@ require_once'acces/acces_serv.php';
         <p><?= $article['prix']?></p>
 
         <h2><?= utf8_encode ($article['economiser'])?></h2>
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
+
 
         </div>
         </a>
