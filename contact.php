@@ -12,18 +12,18 @@ require_once'base/menu.php';
 Techniques Sans Douleur · Soins de Qualité · Service Hors Pair · + de 20 ans d'expérience
 Services: Examen Dentaire, Nettoyage, Réparation de Carie, Blanchiment des Dents, Prothèses," />
 </div>
-    <div>
-
+    <div class="con">
+        <h1 class="hh">Nous Ecrire</h1>
     <form id="form" method="post">
         <div class="conatact">
-            <h1 class="ecrire">Nous Ecrire</h1>
+
             <label for="saisi_nom">Nom: </label>
             <input type="text" id="nom" name="nom" placeholder="entrez votre nom">
             <label for="saisi_mail">Mail: </label>
             <input type="text" id="eml" name="eml" placeholder="entrez votre mail">
             <label for="saisi_com">commentaire: </label>
             <textarea  id="saisi_nom" name="saisi_nom" cols="53" rows="5" placeholder="entrez votre commentaire"></textarea>
-
+            <input type="submit" value="envoyer" id="sub">
 
         </div>
 

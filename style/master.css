@@ -499,9 +499,7 @@ input[type=text], select {
     #wrapper{
         width: 100%;
     }
-    .ecrire{
-        width: 100%;
-    }
+
     .col-9{
         border-radius: 5px;
         background-color: #f2f2f2;
@@ -563,7 +561,26 @@ input[type=text], select {
 
 /*contact*/
 .conatact{
-    width: 40%;
-    padding: 3%;
-}
+    width: 60%;
+    padding: 4%;
 
+
+}
+.con{
+    width: 30%;
+    background-color: #cccccc;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#sub{
+    background-color: #003B64;
+    border: 2px solid;
+    border-radius: 25px;
+    color: white;
+    width: 50%;
+}
+.con>h1{
+    color: #003B64;
+   font-family: "Agency FB";
+}
