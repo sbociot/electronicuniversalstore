@@ -870,11 +870,11 @@ div.submit {
 
 
 
-input#submit {
+#form input#submit {
     margin: auto;
 }
 
-input[type=text], select {
+#form input[type=text], select {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
