@@ -25,8 +25,10 @@ define('ICON_PATH', 'images/icons/');
       </div>
   <?php }  ?>
 </div>
+<div class="">
+  <?php
+  //  require_once'promo.php'; 
+   ?>
 
-
-
-
+</div>
 <?php require_once'base/footer.php';?>
