@@ -226,7 +226,6 @@ div.promo_carrusel div#slider div.slider_droit h2 {
 }
 
 
-<<<<<<< HEAD
 div.promo_carrusel div#slider img {
     margin-left: 25px;
     margin-top: 6px;
@@ -249,28 +248,6 @@ div.promo_carrusel div#slider div#slider_droit h2 {
     padding: 20px 0;
 }
 
-
-@-webkit-keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
-
-}
-
-@keyframes slidy {
-    0% { left: 0; }
-    16.70% { left: 0; }
-    33.40% { left: -100%; }
-    50.1% { left: -200%; }
-    66.80% { left: -300%; }
-    83.50% { left: -400%; }
-    100% { left: -500%; }
-
-=======
 @-webkit-keyframes slidy {
     0% 	    { left: 0; }
     16.70% 	{ left: 0; }
@@ -307,18 +284,19 @@ div.promo_carrusel div#slider div#slider_droit h2 {
 footer {
     background-color: #003B64;
     width: 90%;
-    height: 370px;
-    margin: 2% auto;
+    min-height: 360px;
+    margin: 0 auto;
     font-size: 12px;
     color: white;
     text-align: center;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 
 }
 
 footer div {
     width: 33%;
     float: left;
+    margin: 2% auto;
 
 
 }
@@ -330,8 +308,7 @@ footer div.social {
 
 
 footer h2 {
-    margin-bottom: 5%;
-    margin-top: 5%;
+  padding-top: 2px;
 }
 
 
@@ -442,8 +419,10 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-<<<<<<< HEAD
+}
+
 /*Partie responsive page acceuil*/
+
 @media only screen and (max-width: 414px)  {
     .menu_container {
         width: 90%;
@@ -467,8 +446,7 @@ input[type=text], select {
 		margin: 10%;
 	}
     /*fin partie reponsive pour la page acceuil*/
-=======
->>>>>>> cdfc578ecb6ef6e717b5291b4ebb42e975e075d8
+
 }
 
 #submit {
@@ -576,6 +554,10 @@ input[type=text], select {
         width: 100%;
         text-align: center;
         height: auto;
+    }
+
+    footer div.horaires p {
+        margin-top: 5px;
     }
 
 }
