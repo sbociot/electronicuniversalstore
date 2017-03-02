@@ -6,8 +6,9 @@
     list-style: none;
     font-family: 'Noto Sans', sans-serif;
 }
+
 body {
-  background: #F5F5F5;
+  background: white;
 }
 /*header*/
 .logo {
@@ -113,6 +114,7 @@ margin-right: 30%;
     font-size: 50px;
 }
 /*Aubaine choix*/
+
 .aubaine_choix_user > img{
     width:100%;
     vertical-align: middle;
@@ -164,25 +166,120 @@ margin-right: 30%;
     background:#F5F5F5;
     cursor: pointer;
 }
+/*...............DERVYS....SLIDER..................*/
 
-/*Fin page Aubaine choix*/
-/*..............................footer.................................*/
+
+.promo_carrusel {
+    width: 90%;
+    margin: auto auto 60px auto;
+    overflow: hidden;
+    /*background-color: white;*/
+}
+
+#slider {
+    position: relative;
+    width: 1000%;
+    animation-name: slidy;
+    animation-duration: 20s;
+
+}
+
+div.promo_carrusel div#slider figure {
+    background-color: rgba(0, 59, 100, 0.5);
+    color: #003B64;
+    /*text-align: center;*/
+    position: relative;
+    width: 5%;
+    height: 230px;
+    padding: 5px;
+    float: left;
+
+}
+div.promo_carrusel div#slider a {
+    color: #003B64;
+}
+
+div.promo_carrusel div#slider img {
+    /*margin-left: 25px;*/
+    margin-top: 6px;
+    /*width: 40%;*/
+}
+
+
+div.promo_carrusel div#slider div.slider_droit {
+    width: 45%;
+    float: right;
+    padding-top: 40px;
+}
+
+div.promo_carrusel div#slider div.slider_droit h4 {
+    width: 12%;
+    float: left;
+}
+div.promo_carrusel div#slider div.slider_droit p {
+    width: 50%;
+    float: left;
+}
+
+div.promo_carrusel div#slider div.slider_droit h2 {
+    color: red;
+    text-shadow: 3px 3px 5px #fffcf9;
+    /*6px 6px 5px #ffc3c1,*/
+    /*9px 9px 5px #fffcf9;*/
+    /*font-size: xx-large;*/
+    padding: 60px 0;
+}
+
+
+@-webkit-keyframes slidy {
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
+
+
+}
+
+@keyframes slidy {
+    0% 	    { left: 0; }
+    16.70% 	{ left: 0; }
+    20%	    { left: -100%; }
+    36.70% 	{ left: -100%; }
+    40%	    { left: -200%; }
+    56.70% 	{ left: -200%; }
+    60%	    { left: -300%; }
+    76.70% 	{ left: -300%; }
+    80%	    { left: -400%; }
+    96.70% 	{ left: -400%; }
+    100% 	{ left: -500%; }
+}
+/*.........................FIN......SLIDER.......................*/
+
+/*.........................DERVYS.....FOOTER.................................*/
 
 footer {
     background-color: #003B64;
     width: 90%;
-    height: 300px;
-    margin: 2% auto;
+    min-height: 360px;
+    margin: 0 auto;
     font-size: 12px;
     color: white;
     text-align: center;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 
 }
 
 footer div {
     width: 33%;
     float: left;
+    margin: 2% auto;
 
 
 }
@@ -194,14 +291,13 @@ footer div.social {
 
 
 footer h2 {
-    margin-bottom: 5%;
-    margin-top: 5%;
+  padding-top: 2px;
 }
 
 
 footer p {
     font-size: 12px;
-    margin: 5% auto;
+    /*margin: 5% auto;*/
 }
 
 footer  a {
@@ -222,6 +318,59 @@ footer div.coordonees a{
     margin: 5% auto;
 }
 
+
+footer div.social ul#apli {
+    margin-top: 20px;
+}
+
+footer div.social ul#apli li {
+    display: inline-block;
+    width: 50%;
+    /*vertical-align: middle;*/
+
+}
+
+footer div.social ul#apli li:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+
+}
+
+
+footer div.social ul#apli li img {
+    width: 30px;
+    vertical-align: middle !important;
+    margin-right: 5px;
+}
+
+
+footer div.social h3 {
+    margin: 20px auto;
+}
+
+
+footer div.social ul#redes li {
+    width: 20%;
+    display: inline-block;
+}
+
+footer div.social ul#redes li:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+footer div.social ul#redes li img {
+    width: 40px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 footer div.horaires h4 {
     width: 40%;
     /*display: inline-block;*/
@@ -235,41 +384,237 @@ footer div.horaires table {
 
 }
 
-footer div.social ul#apli {
-    margin-top: 20px;
+
+
+/*footer div.social img {*/
+  /*display: inline-block;*/
+  /*width: 10%;}*/
+    /*!*padding: 5%;*!*/
+
+footer div.horaires p {
+    margin-top: 75px;
+
+}
+/*...................FIN...FOOTER............*/
+
+
+/*..............................................*/
+                /*PARTI.....YOUNES*/
+/*.................................................*/
+
+/*page formulaire */
+
+.footer{
+    display: block;
 }
 
-footer div.social ul#apli li {
+
+/*formulaire page service*/
+
+
+/*Partie responsive page acceuil*/
+@media only screen and (max-width: 414px)  {
+    .menu_container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .menu_container li {
+        display: block;
+        width:100%;
+        text-align: center;
+
+    }
+    .menu_container li a {
+        display: block;
+    }
+    .categorie_icon {
+		width: 28%;
+		margin: 10%;
+	}
+	.image_categorie .categorie_icon{
+		margin: 10%;
+	}
+    /*fin partie reponsive pour la page acceuil*/
+    /* ....RESPONSIVE FOOTER DERVYS...*/
+
+    footer div.coordonees {
+        width: 100%;
+
+    }
+
+    footer div.coordonees h2 {
+        margin: auto;
+    }
+    footer div.coordonees a {
+        display: none;
+
+    }
+
+    footer div.social {
+        display: none;
+    }
+
+    footer div.horaires {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    footer div.horaires p {
+        margin-top: 5px;
+    }
+}
+
+#submit {
+    width: 30%;
+    background-color: #003B64;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #003B64;
+}
+.col-9{
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+
+}
+.col-9 #form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+div.invalid {
+    width: 80%;
+    margin: auto;
+}
+
+div.invalid label{
     display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-
-}
-footer div.social ul#apli li img {
-    width: 30px;
+    width: 13%;
 }
 
-
-footer div.social h3 {
-    margin: 20px auto;
+div.invalid p {
+    width: 70%;
+    margin: auto;
+    font-size: small;
 }
 
 
-footer div.social ul#redes li {
-    width: 20%;
-    display: inline-block;
+
+div.invalid_choix {
+    display: block;
+    width: 58%;
+    margin: auto;
+    padding: 10px;
+
 }
-/*footer div.social li a, #redes li {*/
-    /*width: 44px;*/
-    /*height: 44px;*/
+
+div.submit {
+    width: 45%;
+    text-align: center;
+    margin-left: 72%;
+
+}
+
+/*div.invalid_choix1 label {*/
     /*display: block;*/
-    /*float: left;*/
+    /*width: 10%;*/
 /*}*/
-footer div.social ul#redes li img {
-    width: 40px;
-    display: inline-block;
-    margin-top: 5px;
+
+
+
+input#submit {
+    margin: auto;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #003B64;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div.invalid_choix input#birthday,
+input#sexe {
+    border: 1px solid #003B64;
 }
 
 
+@media only screen and (max-width: 960px){
+    #wrapper{
+        width: 100%;
+    }
+    .col-9{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        /*margin-left: 13%;*/
+        /*margin-right: 13%;*/
+    }
+    #submit{
+        width:calc(100% / 2);
+    }
+    input[type=text],#birthday {
+        width:calc(100% / 2);
+        margin-left: 13%;
+    }
+    label{
+        display: block;
+        color: blue;
+        margin-left: 15%;
+    }
+}
+/*....................yunnes............*/
+@media only screen and (max-width:768px ){
+    #wrapper{
+        width: 100%;
+    }
+    .ecrire{
+        width: 100%;
+    }
+    .col-9{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+    #submit{
+        width: 70%;
+        margin-left: 10%;
+    }
+    input[type=text] {
+        width:calc(100% / 2);
+    }
+
+
+    label{
+        display: block;
+        color: lightcoral;
+        margin-left: 15%;
+    }
+    section{
+        margin-left: 30%;
+    }
+
+}
+
+/*contact*/
+.conatact{
+    width: 40%;
+    padding: 3%;
+}
 

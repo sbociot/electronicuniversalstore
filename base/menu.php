@@ -3,7 +3,7 @@ $menu = array(
   'Acceuil' => 'index.php',
   'Shop' => 'shop.php',
   'Contact' =>'contact.php',
-  'Service' => 'service.php',
+  'Service' => 'formulaire.php',
  );
  
  ?>

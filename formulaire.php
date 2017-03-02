@@ -1,6 +1,9 @@
-
 <?php
+require_once'base/header.php';
+require_once'base/menu.php';
 
+
+define('ICON_PATH', 'images/icons/');
 ?>
 <?php
 $liste_ville = array('choisir.', 'Montreal', 'Gâtineau', 'Sherbrooke', 'Quebec');
@@ -61,9 +64,7 @@ if (array_key_exists('saisi_password2', $_POST)) {
         $password2_valide = false;
     }
 }
-if ($password !== $password2) {
-    echo "<p>les deux mot de pass ne sont pas identique</p>";
-}
+
 
 /******/
 
@@ -89,18 +90,21 @@ if ($reception && empty($ville)) {
 /**********************************************/
 
 if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide && $telephone_valide
-    && $ville_valide && $password_valide && $password2_valide
+    && $ville_valide
 ) {
     // Les données de formulaire sont valides
-    header('Location:inscrire.php');
+    header('Location:contact.php');
     exit;
 }
 ?>
+<head>
+
+</head>
 <body>
 <div id="wrapper" class="row">
     <div class="col-9">
         <form id="form" method="post">
-            <div class="<?= $nom_valide ? '' : 'invalid' ?>">
+            <div class="invalid<?= $nom_valide ? '' : 'invalid' ?>">
                 <label for="saisi_nom">Nom: </label>
                 <input type="text" id="saisi_nom" name="saisi_nom" placeholder="entrez votre nom"
                        value="<?= $nom ?>">
@@ -111,7 +115,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
                 ?>
             </div>
-            <div class="<?= $prenom_valide ? '' : 'invalid' ?>">
+            <div class="invalid<?= $prenom_valide ? '' : 'invalid' ?>">
                 <label for="saisi_prenom">Prenom: </label>
                 <input type="text" id="saisi_prenom" name="saisi_prenom" placeholder="entrez votre prenom"
                        value="<?= $prenom ?>">
@@ -122,7 +126,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
             </div>
 
-            <div class="<?= $telephone_valide ? '' : 'invalid' ?>">
+            <div class="invalid<?= $telephone_valide ? '' : 'invalid' ?>">
                 <label for="saisi_telephone">Telephone: </label>
                 <input type="text" id="saisi_telephone" name="saisi_telephone" maxlength="10" placeholder="***-***-****"
                        value="<?= $telephone ?>">
@@ -133,7 +137,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
             </div>
 
-            <div class="<?= $email_valide ? '' : 'invalid' ?>">
+            <div class="invalid<?= $email_valide ? '' : 'invalid' ?>">
                 <label for="saisi_email">Email: </label>
                 <input type="text" id="saisi_email" name="saisi_email" placeholder="example@emample.con"
                        value="<?= $email ?>">
@@ -144,26 +148,8 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
             </div>
 
-            <div class="<?= $password_valide ? '' : 'invalid' ?>">
-                <label for="saisi_password">Mot De Passe: </label>
-                <input type="password" id="saisi_password" name="saisi_password" value="<?= $password ?>">
-                <?php
-                if (!$password_valide) {
-                    echo "<p>veuillez indiquer un mot de passe de 8 caracteres minimum</p>";
 
-                }
-                ?>
-            </div>
-            <div class="<?= $password2_valide ? '' : 'invalid' ?>">
-                <label for="saisi_password2">confirmer le Mot De Passe: </label>
-                <input type="password" id="saisi_password2" name="saisi_password2" value="<?= $password2 ?>">
-                <?php
-                if (!$password2_valide) {
-                    echo "<p>les deux mots de passe ne sont pas identique</p>";
-                }
-                ?>
-            </div>
-            <div class="<?= $sexe_valide ? '' : 'invalid' ?>">
+            <div class="invalid_choix<?= $sexe_valide ? '' : 'invalid' ?>">
                 <label for="sexe">Sexe: </label>
                 Homme <input type="radio" name="sexe[]" id="sexe" value="H">
                 Femme <input type="radio" name="sexe[]" id="sexe" value="F">
@@ -175,13 +161,13 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
 
             </div>
-            <div>
+            <div class="invalid_choix">
                 <label for="birthday">Date de Naissance: </label>
                 <input type="date" id="birthday" name="birthday" value="">
             </div>
-            <div>
-                <label for="ville">ville: </label>
-                <select name="ville[]" id="ville" multiple="multiple">
+            <div class="invalid">
+                <label for="ville">Ville: </label>
+                <select name="ville[]" id="ville">
                     <?php foreach ($liste_ville as $ville) {
                         $option_value = retire_accents($ville);
                         ?>
@@ -194,12 +180,16 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                     <?php } ?>
                 </select>
             </div>
-            <div>
-                <input id="submit" type="submit" value="Inscription">
+            <div class="submit">
+                <input id="submit" type="submit" value="reservation">
             </div>
-
         </form>
     </div>
+</div>
+<div class="footer">
+<?php
+require_once'base/footer.php';
+?>
 </div>
 
 
