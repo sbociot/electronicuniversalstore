@@ -406,7 +406,6 @@ footer div.horaires p {
 
 
 /*Partie responsive page acceuil*/
-
 @media only screen and (max-width: 414px)  {
     .menu_container {
         width: 90%;

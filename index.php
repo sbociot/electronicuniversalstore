@@ -8,7 +8,7 @@ define('ICON_PATH', 'images/icons/');
 
 <div class="promo_carrusel">
     <?php
-    require_once'promo.php';
+//     require_once'promo.php';
     ?>
 </div>
 
@@ -25,5 +25,14 @@ define('ICON_PATH', 'images/icons/');
       </div>
   <?php }  ?>
 </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="promo_carrusel">
+  <?php
+//     require_once'promo.php';
+   ?>
+</div>
+=======
+>>>>>>> 4c8a70498ed70f4dc647d7d04b2c9e2ae4973e24
 
 <?php require_once'base/footer.php';?>

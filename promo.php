@@ -19,8 +19,8 @@ require_once'acces/acces_serv.php';
 
                     <h2><?= utf8_encode ($article['economiser'])?></h2>
 
-                </div>
-            </a>
-        </figure>
-    <?php }?>
+        </div>
+        </a>
+    </figure>
+<?php }?>
 </div>
