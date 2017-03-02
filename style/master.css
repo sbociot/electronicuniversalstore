@@ -31,8 +31,12 @@ body {
 .header_wrapper li:first-of-type {
   width: 50%;
 }
+.header_wrapper li:last-of-type {
+	width: 40px;
+	margin-left: 37%;
+}
 .header_wrapper li:last-of-type img {
-  width: 20%;
+  width: 100%;
   vertical-align: middle;
 }
 
