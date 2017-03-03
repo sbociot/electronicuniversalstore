@@ -9,8 +9,8 @@ define('ARTICLE_IMG_PATH', 'images/');
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <meta name="robots" content="index,follow" >
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-      <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <!--
       <link rel="stylesheet" href="style/master-form.css">
     -->

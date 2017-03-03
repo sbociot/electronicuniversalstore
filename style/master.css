@@ -59,6 +59,9 @@ margin-right: 30%;
     margin-right: 10px;
 }
 
+/* menu hambuerger*/
+
+
 
 /*Les aubaiones par categorie*/
 
@@ -162,14 +165,14 @@ margin-right: 30%;
 /*...............DERVYS....SLIDER..................*/
 
 
-.promo_carrusel {
+.promo_carrusel { /*centramos el div conteneur*/
     width: 90%;
     margin: auto auto 60px auto;
     overflow: hidden;
     /*background-color: white;*/
 }
 
-#slider {
+#slider { /*on dimension les div img */
     position: relative;
     width: 1000%;
     animation-name: slidy;
@@ -177,7 +180,7 @@ margin-right: 30%;
 
 }
 
-div.promo_carrusel div#slider figure {
+div.promo_carrusel div#slider figure { /*faire floter les imagen */
     background-color: rgba(0, 59, 100, 0.5);
     color: #003B64;
     /*text-align: center;*/
@@ -377,13 +380,6 @@ footer div.horaires table {
 
 }
 
-
-
-/*footer div.social img {*/
-  /*display: inline-block;*/
-  /*width: 10%;}*/
-    /*!*padding: 5%;*!*/
-
 footer div.horaires p {
     margin-top: 75px;
 
@@ -405,13 +401,37 @@ footer div.horaires p {
 /*formulaire page service*/
 
 
-/*Partie responsive page acceuil*/
+/*...............................Partie responsive page acceuil.............*/
 @media only screen and (max-width: 414px)  {
+
     .menu_container {
-        width: 90%;
+        width: 50%;
         margin-left: 5%;
         margin-right: 5%;
     }
+    /*.................menu hamburger.....................*/
+
+    .menu-btn {
+        padding:6px;
+    }
+    /*on style le hamburger*/
+    .menu-btn span {
+        display: block; /*les span se placent les uns sous les autres*/
+        width: 50px; /*largeur de la rayure*/
+        height: 3px; /*hauteur de la rayure*/
+        margin: 8px 0; /*on les sépare*/
+        /*background: rgb(255,255,255); !*couleur des rayures*!*/
+        background-color: #003B64;
+        z-index: 99;
+    }
+    /*on cache le menu par défaut*/
+    .menu_container{
+        display: none;
+    }
+    .expand {
+        display: block !important;
+    }
+
     .menu_container li {
         display: block;
         width:100%;
@@ -430,7 +450,9 @@ footer div.horaires p {
 	}
     /*fin partie reponsive pour la page acceuil*/
     /* ....RESPONSIVE FOOTER DERVYS...*/
-
+    div#slider {
+        display: none;
+    }
     footer div.coordonees {
         width: 100%;
 
@@ -464,7 +486,7 @@ footer div.horaires p {
     background-color: #003B64;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
     margin-left: 20%;
     border: none;
     border-radius: 4px;
@@ -474,14 +496,15 @@ footer div.horaires p {
 #submit:hover {
     background-color: #003B64;
 }
-.col-9{
+div.col-9{
     width: 90%;
     margin: auto;
     border-radius: 5px;
     background-color: #f2f2f2;
 
 }
-.col-9 #form {
+div.col-9 #form {
+    background-color: rgba(0, 59, 100, 0.5);
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -520,13 +543,6 @@ div.submit {
 
 }
 
-/*div.invalid_choix1 label {*/
-    /*display: block;*/
-    /*width: 10%;*/
-/*}*/
-
-
-
 input#submit {
     margin: auto;
 }
@@ -552,10 +568,9 @@ input#sexe {
     }
     .col-9{
         border-radius: 5px;
-        background-color: #f2f2f2;
+        background-color: #003B64;
         padding: 20px;
-        /*margin-left: 13%;*/
-        /*margin-right: 13%;*/
+
     }
     #submit{
         width:calc(100% / 2);
@@ -606,8 +621,32 @@ input#sexe {
 }
 
 /*contact*/
-.conatact{
-    width: 40%;
-    padding: 3%;
+
+div.fr_conect {
+    width: 90%;
+    color: #003B64;
+    background-color: rgba(0, 59, 100, 0.5);
+    margin: auto auto 3%;
 }
+
+div.fr_conect form {
+    width: 40%;
+    margin: auto;
+    padding: 3% 0;
+}
+div.fr_conect form h2 {
+    margin: auto;
+    width: 50%;
+
+}
+
+div.fr_conect form label {
+ width: 100%;
+    display: -webkit-box;
+}
+/*.conatact{*/
+    /*width: 40%;*/
+    /*padding: 3%;*/
+    /*margin: auto;*/
+/*}*/
 
