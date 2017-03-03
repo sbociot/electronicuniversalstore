@@ -181,7 +181,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 </select>
             </div>
             <div class="submit">
-                <input id="submit" type="submit" value="reservation">
+                <input id="submit" type="submit" value="Reservation">
             </div>
         </form>
     </div>
