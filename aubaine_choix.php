@@ -2,6 +2,7 @@
  require_once 'base/header.php';
  require_once 'base/menu.php';
  require_once 'acces/acces_serv.php';
+ require_once 'promo.php';
 
  // var_dump($_GET['aubaine']);
  // var_dump($data);
@@ -19,7 +20,9 @@
         <img src="<?= ARTICLE_IMG_PATH,$value['image']?>" alt="<?=$value['nom']?>"/>
         <p><a href="user_choice.php?aubaine=<?=$value['nom']?>"><?= $value['prix'] ?></a> </p>
 </div>
-      <?php }?>
+      <?php }else foreach ($categorie as $key => $value){
+
+      }?>
     <?php }?>
 </div>
 <?php
