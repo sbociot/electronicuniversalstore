@@ -390,12 +390,9 @@ footer div.horaires p {
 
 /*page formulaire */
 
-.footer{
-    display: block;
-}
 
 
-/*formulaire page service*/
+
 
 
 /*Partie responsive page acceuil*/
@@ -478,24 +475,11 @@ footer div.horaires p {
     }
 }
 
-#submit {
-    width: 30%;
-    background-color: #003B64;
-    color: white;
-    padding: 14px 20px;
-    /*margin: 8px 0;*/
-    margin-left: 20%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+/*................younes contacte..................*/
 
-#submit:hover {
-    background-color: #003B64;
-}
 div.col-9{
     width: 90%;
-    margin: auto;
+    margin: auto auto 3%;
     border-radius: 5px;
     background-color: #f2f2f2;
 
@@ -523,28 +507,7 @@ div.invalid p {
     font-size: small;
 }
 
-
-
-div.invalid_choix {
-    display: block;
-    width: 58%;
-    margin: auto;
-    padding: 10px;
-
-}
-
-div.submit {
-    width: 45%;
-    text-align: center;
-    margin-left: 72%;
-
-}
-
-input#submit {
-    margin: auto;
-}
-
-input[type=text], select {
+div.invalid input {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -553,11 +516,89 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-div.invalid_choix input#birthday,
-input#sexe {
-    border: 1px solid #003B64;
+
+div.invalid label#code {
+    width: auto;
+    margin-left: 15%;
+}
+div.invalid input#idcode_postal {
+    width: 25%;
 }
 
+div.invalid select#ville {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #003B64;
+    border-radius: 4px;
+
+}
+
+div.submit {
+    width: 40%;
+    text-align: center;
+    margin-left: 58%;
+
+}
+
+input#submit {
+    margin: auto;
+}
+#submit {
+    width: 30%;
+    background-color: #003B64;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    margin-left: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #003B64;
+}
+
+/*................SERVICES....YOUNES.................*/
+
+div.fr_conect {
+    width: 90%;
+    color: #003B64;
+    background-color: #f2f2f2;
+    margin: auto auto 3%;
+}
+
+div.fr_conect form {
+    background-color: rgba(0, 59, 100, 0.5);
+    width: 50%;
+    margin: auto;
+    padding: 2% 0;
+    text-align: -webkit-center;
+}
+div.fr_conect form h2 {
+    margin: 2% auto;
+    width: 50%;
+
+}
+
+div.fr_conect form label {
+    display: inline-block;
+    width: 20%;
+
+}
+
+div.fr_conect input, div.fr_conect textarea{
+    border: 1px solid #003B64;
+    border-radius: 4px;
+    padding: 2px;
+    width: 60%;
+    margin: 2px auto;
+}
+
+div.fr_conect input#coment {
+    width: 10%;
+    display: inherit;
+}
 
 @media only screen and (max-width: 960px){
     #wrapper{
@@ -617,33 +658,9 @@ input#sexe {
 
 }
 
-/*contact*/
 
-div.fr_conect {
-    width: 90%;
-    color: #003B64;
-    background-color: rgba(0, 59, 100, 0.5);
-    margin: auto auto 3%;
-}
 
-div.fr_conect form {
-    width: 40%;
-    margin: auto;
-    padding: 3% 0;
-}
-div.fr_conect form h2 {
-    margin: auto;
-    width: 50%;
 
-}
 
-div.fr_conect form label {
- width: 100%;
-    display: -webkit-box;
-}
-/*.conatact{*/
-    /*width: 40%;*/
-    /*padding: 3%;*/
-    /*margin: auto;*/
-/*}*/
+
 
