@@ -59,9 +59,6 @@ margin-right: 30%;
     margin-right: 10px;
 }
 
-/* menu hambuerger*/
-
-
 
 /*Les aubaiones par categorie*/
 
@@ -401,11 +398,11 @@ footer div.horaires p {
 /*formulaire page service*/
 
 
-/*...............................Partie responsive page acceuil.............*/
+/*Partie responsive page acceuil*/
 @media only screen and (max-width: 414px)  {
 
     .menu_container {
-        width: 50%;
+        width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
