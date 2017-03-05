@@ -40,30 +40,27 @@ body {
     margin-top: 4.5%;
 
 }
-
 .header_wrapper li:last-of-type img {
   width: 20%;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .menu_container li {
     display: inline-block;
     padding: 20px;
 }
-
 .menu_container li:hover {
-    background: white;
+  background: white;
 }
-
 .menu_container li a {
-    text-transform: uppercase;
-    color: #4D4D4F;
+  text-transform: uppercase;
+  color: #4D4D4F;
 }
 
 .menu_container {
-    width: 35%;
-    margin-left: 30%;
-    margin-right: 30%;
+  width: 35%;
+margin-left: 30%;
+margin-right: 30%;
 }
 
 .menu_container li:not(:first-of-type) {
@@ -133,8 +130,8 @@ body {
     color: black;
 }
 .icon_wrapper li a {
-    color: #003B64;
-    text-transform: uppercase;
+  color: #003B64;
+  text-transform: uppercase;
 }
 
 .image_categorie .categorie_icon {
@@ -152,58 +149,49 @@ body {
 }
 /*Aubaine choix*/
 
-.aubaine_choix_user > img {
-    width: 100%;
+.aubaine_choix_user > img{
+    width:100%;
     vertical-align: middle;
 }
-
-.aubaine_choix_user {
+.aubaine_choix_user{
     width: 20%;
-    margin: 5%;
+    margin:5%;
     padding: 10px;
 }
-
 .aubaine_choix_user p {
     background: #003B64;
-    width: 100%;
+    width:100%;
     text-align: center;
     padding: 10px;
 }
-
 .aubaine_choix_user p a {
-    color: white;
+    color:white;
 
 }
-
-.aubaine_choix_user_wrapper {
+.aubaine_choix_user_wrapper{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     background: white;
 }
-
 .aubaine_choix_user_wrapper .aubaine_choix_user {
     display: inline-block;
 }
-
-.aubaine_choix_user_wrapper h1 {
-    width: 40%;
-    background: #003B64;
-    padding: 10px;
+.aubaine_choix_user_wrapper h1{
+    width:40%;
+    background:#003B64;
+    padding:10px;
     text-align: center;
     margin-right: 30%;
     margin-left: 30%;
     color: white;
 }
-
 .aubaine_choix_user h2 {
     color: #003B64;
 }
-
 .aubaine_choix_user p:hover {
     background: #F5F5F5;
 }
-
 .aubaine_choix_user p:hover a {
     color :#003B64;
     border-bottom: 1px solid #003B64;;
@@ -230,7 +218,7 @@ body {
 
 }
 
-div.promo_carrusel div#slider figure {
+div.promo_carrusel div#slider figure { /*faire floter les imagen */
     background-color: rgba(0, 59, 100, 0.5);
     color: #003B64;
     /*text-align: center;*/
@@ -334,6 +322,7 @@ footer div.coordonees,
 footer div.social {
     border-right: 2px solid darkgray;
 }
+
 
 footer h2 {
     margin-bottom: 5%;
@@ -491,7 +480,9 @@ footer div.horaires p {
 	}
     /*fin partie reponsive pour la page acceuil*/
     /* ....RESPONSIVE FOOTER DERVYS...*/
-
+    div#slider {
+        display: none;
+    }
     footer div.coordonees {
         width: 100%;
 
@@ -542,7 +533,8 @@ footer div.horaires p {
     background-color: #f2f2f2;
 
 }
-.col-9 #form {
+div.col-9 #form {
+    background-color: rgba(0, 59, 100, 0.5);
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -585,7 +577,7 @@ input#submit {
     margin: auto;
 }
 
-#form input[type=text], select {
+input[type=text], select {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -595,12 +587,81 @@ input#submit {
 }
 
 div.invalid_choix input#birthday,
-#form input#sexe {
+input#sexe {
     border: 1px solid #003B64;
+    border-radius: 4px;
+
 }
 
-@media only screen and (max-width: 960px) {
-    #wrapper {
+div.submit {
+    width: 40%;
+    text-align: center;
+    margin-left: 58%;
+
+}
+
+input#submit {
+    margin: auto;
+}
+#submit {
+    width: 30%;
+    background-color: #003B64;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    margin-left: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #003B64;
+}
+
+/*................SERVICES....YOUNES.................*/
+
+div.fr_conect {
+    width: 90%;
+    color: #003B64;
+    background-color: #f2f2f2;
+    margin: auto auto 3%;
+}
+
+div.fr_conect form {
+    background-color: rgba(0, 59, 100, 0.5);
+    width: 50%;
+    margin: auto;
+    padding: 2% 0;
+    text-align: -webkit-center;
+}
+div.fr_conect form h2 {
+    margin: 2% auto;
+    width: 50%;
+
+}
+
+div.fr_conect form label {
+    display: inline-block;
+    width: 20%;
+
+}
+
+div.fr_conect input, div.fr_conect textarea{
+    border: 1px solid #003B64;
+    border-radius: 4px;
+    padding: 2px;
+    width: 60%;
+    margin: 2px auto;
+}
+
+div.fr_conect input#coment {
+    width: 10%;
+    display: inherit;
+}
+
+@media only screen and (max-width: 960px){
+    #wrapper{
         width: 100%;
     }
 
@@ -655,251 +716,6 @@ div.invalid_choix input#birthday,
         width: calc(100% / 2);
     }
 
-    label {
-        display: block;
-        color: lightcoral;
-        margin-left: 15%;
-    }
-
-    section {
-        margin-left: 30%;
-    }
-
-}
-
-/*contact*/
-.conatact {
-    width: 40%;
-    padding: 3%;
-}
-
-footer div.horaires table {
-    width: 100%;
-    text-align: center;
-
-
-}
-
-
-
-/*footer div.social img {*/
-  /*display: inline-block;*/
-  /*width: 10%;}*/
-    /*!*padding: 5%;*!*/
-
-footer div.horaires p {
-    margin-top: 75px;
-
-}
-/*...................FIN...FOOTER............*/
-
-
-/*..............................................*/
-                /*PARTI.....YOUNES*/
-/*.................................................*/
-
-/*page formulaire */
-
-.footer{
-    display: block;
-}
-
-
-/*formulaire page service*/
-
-
-/*Partie responsive page acceuil*/
-@media only screen and (max-width: 414px)  {
-    .menu_container {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .menu_container li {
-        display: block;
-        width:100%;
-        text-align: center;
-
-    }
-    .menu_container li a {
-        display: block;
-    }
-    .categorie_icon {
-		width: 28%;
-		margin: 10%;
-	}
-	.image_categorie .categorie_icon{
-		margin: 10%;
-	}
-    /*fin partie reponsive pour la page acceuil*/
-    /* ....RESPONSIVE FOOTER DERVYS...*/
-
-    footer div.coordonees {
-        width: 100%;
-
-    }
-
-    footer div.coordonees h2 {
-        margin: auto;
-    }
-    footer div.coordonees a {
-        display: none;
-
-    }
-
-    footer div.social {
-        display: none;
-    }
-
-    footer div.horaires {
-        width: 100%;
-        text-align: center;
-        height: auto;
-    }
-
-    footer div.horaires p {
-        margin-top: 5px;
-    }
-}
-
-#submit {
-    width: 30%;
-    background-color: #003B64;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    margin-left: 20%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#submit:hover {
-    background-color: #003B64;
-}
-.col-9{
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-
-}
-.col-9 #form {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-}
-
-div.invalid {
-    width: 80%;
-    margin: auto;
-}
-
-div.invalid label{
-    display: inline-block;
-    width: 13%;
-}
-
-div.invalid p {
-    width: 70%;
-    margin: auto;
-    font-size: small;
-}
-
-
-
-div.invalid_choix {
-    display: block;
-    width: 58%;
-    margin: auto;
-    padding: 10px;
-
-}
-
-div.submit {
-    width: 45%;
-    text-align: center;
-    margin-left: 72%;
-
-}
-
-/*div.invalid_choix1 label {*/
-    /*display: block;*/
-    /*width: 10%;*/
-/*}*/
-
-
-
-#form input#submit {
-    margin: auto;
-}
-
-#form input[type=text], select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #003B64;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-div.invalid_choix input#birthday,
-input#sexe {
-    border: 1px solid #003B64;
-}
-
-
-@media only screen and (max-width: 960px){
-    #wrapper{
-        width: 100%;
-    }
-    .col-9{
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        /*margin-left: 13%;*/
-        /*margin-right: 13%;*/
-    }
-    #submit{
-        width:calc(100% / 2);
-    }
-    input[type=text],#birthday {
-        width:calc(100% / 2);
-        margin-left: 13%;
-    }
-    label{
-        display: block;
-        color: blue;
-        margin-left: 15%;
-    }
-    textarea{
-        width: calc(400%/2);
-    }
-
-}
-/*....................yunnes............*/
-@media only screen and (max-width:768px ){
-    #wrapper{
-        width: 100%;
-    }
-
-    .col-9{
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-left: 13%;
-        margin-right: 13%;
-    }
-    #submit{
-        width: 70%;
-        margin-left: 10%;
-    }
-    input[type=text] {
-        width:calc(100% / 2);
-    }
-    textarea{
-        width: calc(400%/2);
-    }
 
     label{
         display: block;
@@ -912,33 +728,9 @@ input#sexe {
 
 }
 
-/*contact*/
 
-div.fr_conect {
-    width: 90%;
-    color: #003B64;
-    background-color: rgba(0, 59, 100, 0.5);
-    margin: auto auto 3%;
-}
 
-div.fr_conect form {
-    width: 40%;
-    margin: auto;
-    padding: 3% 0;
-}
-div.fr_conect form h2 {
-    margin: auto;
-    width: 50%;
 
-}
 
-div.fr_conect form label {
- width: 100%;
-    display: -webkit-box;
-}
-/*.conatact{*/
-    /*width: 40%;*/
-    /*padding: 3%;*/
-    /*margin: auto;*/
-/*}*/
+
 
