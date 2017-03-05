@@ -11,32 +11,39 @@ body {
   background: white;
 }
 /*header*/
-.logo {
-    width: 30%;
+.barner_header_wrapper {
+    width: 100%;
+    background:#003B64;
+}
+.barner {
+    width: 20%;
+    padding:10px;
+}
+.barner img{
+    width: 25%;
     vertical-align: middle;
-    padding: 20px;
 }
-.logo_container {
-  width: 100%;
+.barner:not(:first-of-type){
+    margin-left: 15%;
 }
-.header_wrapper{
-  width: 90%;
-  vertical-align: middle;
-  margin-right: 5%;
-  margin-left: 5%;
-  background: #003B64;
+.barner_header_wrapper .barner  {
+    display: inline-block;
 }
-.header_wrapper li {
-  display: inline-block;
+.barner:first-of-type {
+    margin-left: 9%;
 }
-.header_wrapper li:first-of-type {
-  width: 50%;
+.login_user {
+    display: none;
 }
-.header_wrapper li:last-of-type img {
-  width: 20%;
-  vertical-align: middle;
+.login_user input {
+    display: block;
+    transform: scale(0);
+    transition: .4s ease;
 }
-
+.login_user input[type=submit] {
+    width:51%;
+}
+/*fin header*/
 .menu_container li {
     display: inline-block;
     padding: 20px;
