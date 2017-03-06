@@ -8,11 +8,10 @@ $menu = array(
  
  ?>
 <nav class="herder_menu">
-    <!----menu mobil--->
-    <div class="menu-btn" id="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="responsive_menu">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
     </div>
         <!----menu normal--->
     <ul class="menu_container">

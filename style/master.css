@@ -10,6 +10,7 @@
 body {
   background: white;
 }
+
 /*header*/
 .barner_header_wrapper {
     width: 100%;
@@ -44,12 +45,40 @@ body {
     width:51%;
 }
 /*fin header*/
+/*responsive menu*/
+#one, #two, #three {
+    background: black;
+    width: 42px;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.transform_one {
+    transform: translateY(22px) rotate(45deg);
+}
+
+.fade {
+    opacity: 0;
+}
+
+.transform_three {
+    transform: translateY(1px) rotate(-45deg);
+}
+.responsive_menu {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: none;
+}
+/*fin responsive menu*/
 .menu_container li {
     display: inline-block;
     padding: 20px;
 }
 .menu_container li:hover {
-  background: white;
+  background: #f6f6f5;
 }
 .menu_container li a {
   text-transform: uppercase;
@@ -58,8 +87,8 @@ body {
 
 .menu_container {
   width: 35%;
-margin-left: 30%;
-margin-right: 30%;
+margin-left: 32.5%;
+margin-right: 32.5%;
 }
 
 .menu_container li:not(:first-of-type) {
@@ -97,7 +126,7 @@ margin-right: 30%;
 }
 .icon_wrapper li a {
   color: #003B64;
-  text-transform: uppercase;
+  
 }
 
 .image_categorie .categorie_icon {
@@ -218,12 +247,11 @@ div.promo_carrusel div#slider div.slider_droit h4 {
 }
 div.promo_carrusel div#slider div.slider_droit p {
     width: 50%;
-    
+
 }
 
 div.promo_carrusel div#slider div.slider_droit h2 {
     color: white;
-    text-shadow: 3px 3px 5px #fffcf9;
     padding: 10px ;
     background: #003B64;
 }
@@ -400,85 +428,6 @@ footer div.horaires p {
 
 
 
-/*Partie responsive page acceuil*/
-@media only screen and (max-width: 414px)  {
-
-    .menu_container {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    /*.................menu hamburger.....................*/
-
-    .menu-btn {
-        padding:6px;
-    }
-    /*on style le hamburger*/
-    .menu-btn span {
-        display: block; /*les span se placent les uns sous les autres*/
-        width: 50px; /*largeur de la rayure*/
-        height: 3px; /*hauteur de la rayure*/
-        margin: 8px 0; /*on les sépare*/
-        /*background: rgb(255,255,255); !*couleur des rayures*!*/
-        background-color: #003B64;
-        z-index: 99;
-    }
-    /*on cache le menu par défaut*/
-    .menu_container{
-        display: none;
-    }
-    .expand {
-        display: block !important;
-    }
-
-    .menu_container li {
-        display: block;
-        width:100%;
-        text-align: center;
-
-    }
-    .menu_container li a {
-        display: block;
-    }
-    .categorie_icon {
-		width: 28%;
-		margin: 10%;
-	}
-	.image_categorie .categorie_icon{
-		margin: 10%;
-	}
-    /*fin partie reponsive pour la page acceuil*/
-    /* ....RESPONSIVE FOOTER DERVYS...*/
-    div#slider {
-        display: none;
-    }
-    footer div.coordonees {
-        width: 100%;
-
-    }
-
-    footer div.coordonees h2 {
-        margin: auto;
-    }
-    footer div.coordonees a {
-        display: none;
-
-    }
-
-    footer div.social {
-        display: none;
-    }
-
-    footer div.horaires {
-        width: 100%;
-        text-align: center;
-        height: auto;
-    }
-
-    footer div.horaires p {
-        margin-top: 5px;
-    }
-}
 
 /*................younes contacte..................*/
 
@@ -663,7 +612,73 @@ div.fr_conect input#coment {
 
 }
 
+.open_menu {
+    transform: scale(1);
+    transform-origin: top left;
+}
+/*Partie responsive page acceuil*/
+@media only screen and (max-width: 414px)  {
 
+    .responsive_menu {
+        display: block;
+    }
+    .menu_container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        transition: .4s ease;
+       display: none;
+
+    }
+
+    .menu_container li {
+
+        width:100%;
+        text-align: center;
+
+    }
+    .menu_container li a {
+        display: block;
+    }
+    .categorie_icon {
+        width: 28%;
+        margin: 10%;
+    }
+    .image_categorie .categorie_icon{
+        margin: 10%;
+    }
+    /*fin partie reponsive pour la page acceuil*/
+    /* ....RESPONSIVE FOOTER DERVYS...*/
+    div#slider {
+        display: none;
+    }
+    footer div.coordonees {
+        width: 100%;
+
+    }
+
+    footer div.coordonees h2 {
+        margin: auto;
+    }
+    footer div.coordonees a {
+        display: none;
+
+    }
+
+    footer div.social {
+        display: none;
+    }
+
+    footer div.horaires {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    footer div.horaires p {
+        margin-top: 5px;
+    }
+}
 
 
 
