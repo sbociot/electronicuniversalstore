@@ -46,7 +46,9 @@ require_once 'check_connect.php';
               <?php } ?>
           </div>
           <div class="barner">
+              <a href="panier_view.php">
               <img class="logo" src="<?=ARTICLE_IMG_PATH?>online-store.png" alt="Electronic Universal Store">
+              </a>
           </div>
       </div>
   </header>
