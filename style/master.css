@@ -73,7 +73,7 @@ margin-right: 30%;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: white;
+    background-color: #f6f6f5;
 }
 
 .categorie_icon {
@@ -185,7 +185,7 @@ margin-right: 30%;
 }
 
 div.promo_carrusel div#slider figure { /*faire floter les imagen */
-    background-color: rgba(0, 59, 100, 0.5);
+    background-color: #f6f6f5;
     color: #003B64;
     /*text-align: center;*/
     position: relative;
@@ -218,16 +218,14 @@ div.promo_carrusel div#slider div.slider_droit h4 {
 }
 div.promo_carrusel div#slider div.slider_droit p {
     width: 50%;
-    float: left;
+    
 }
 
 div.promo_carrusel div#slider div.slider_droit h2 {
-    color: red;
+    color: white;
     text-shadow: 3px 3px 5px #fffcf9;
-    /*6px 6px 5px #ffc3c1,*/
-    /*9px 9px 5px #fffcf9;*/
-    /*font-size: xx-large;*/
-    padding: 60px 0;
+    padding: 10px ;
+    background: #003B64;
 }
 
 
