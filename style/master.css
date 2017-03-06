@@ -7,6 +7,11 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+em.seo, strong.seo {
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   background: white;
 }
@@ -429,6 +434,96 @@ footer div.horaires p {
 
 
 
+
+/*Partie responsive page acceuil*/
+@media only screen and (max-width: 414px)  {
+
+    .menu_container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /*.................menu hamburger.....................*/
+
+    .menu-btn {
+        padding:6px;
+    }
+    /*on style le hamburger*/
+    .menu-btn span {
+        display: block; /*les span se placent les uns sous les autres*/
+        width: 50px; /*largeur de la rayure*/
+        height: 3px; /*hauteur de la rayure*/
+        margin: 8px 0; /*on les sépare*/
+        /*background: rgb(255,255,255); !*couleur des rayures*!*/
+        background-color: #003B64;
+        z-index: 99;
+    }
+    /*on cache le menu par défaut*/
+    .menu_container{
+        display: none;
+    }
+    .expand {
+        display: block !important;
+    }
+
+    .menu_container li {
+        display: block;
+        width:100%;
+        text-align: center;
+
+    }
+    .menu_container li a {
+        display: block;
+    }
+    .categorie_icon {
+		width: 28%;
+		margin: 10%;
+	}
+	.image_categorie .categorie_icon{
+		margin: 10%;
+	}
+    /*fin partie reponsive pour la page acceuil*/
+
+    /*...........reponsive contacte................*/
+
+    div.col-9 #form {
+        width: 100%;
+    }
+
+
+    /* ....RESPONSIVE FOOTER DERVYS...*/
+    div#slider {
+        display: none;
+    }
+    footer div.coordonees {
+        width: 100%;
+
+    }
+
+    footer div.coordonees h2 {
+        margin: auto;
+    }
+    footer div.coordonees a {
+        display: none;
+
+    }
+
+    footer div.social {
+        display: none;
+    }
+
+    footer div.horaires {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    footer div.horaires p {
+        margin-top: 5px;
+    }
+}
+
+
 /*................younes contacte..................*/
 
 div.col-9{
@@ -526,7 +621,7 @@ div.fr_conect form {
     background-color: rgba(0, 59, 100, 0.5);
     width: 50%;
     margin: auto;
-    padding: 2% 0;
+    padding: 2%;
     text-align: -webkit-center;
 }
 div.fr_conect form h2 {
@@ -534,6 +629,7 @@ div.fr_conect form h2 {
     width: 50%;
 
 }
+
 
 div.fr_conect form label {
     display: inline-block;
@@ -554,63 +650,63 @@ div.fr_conect input#coment {
     display: inherit;
 }
 
-@media only screen and (max-width: 960px){
-    #wrapper{
-        width: 100%;
-    }
-    .col-9{
-        border-radius: 5px;
-        background-color: #003B64;
-        padding: 20px;
+/*@media only screen and (max-width: 960px){*/
+    /*#wrapper{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.col-9{*/
+        /*border-radius: 5px;*/
+        /*background-color: #003B64;*/
+        /*padding: 20px;*/
 
-    }
-    #submit{
-        width:calc(100% / 2);
-    }
-    input[type=text],#birthday {
-        width:calc(100% / 2);
-        margin-left: 13%;
-    }
-    label{
-        display: block;
-        color: blue;
-        margin-left: 15%;
-    }
-}
-/*....................yunnes............*/
-@media only screen and (max-width:768px ){
-    #wrapper{
-        width: 100%;
-    }
-    .ecrire{
-        width: 100%;
-    }
-    .col-9{
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-left: 13%;
-        margin-right: 13%;
-    }
-    #submit{
-        width: 70%;
-        margin-left: 10%;
-    }
-    input[type=text] {
-        width:calc(100% / 2);
-    }
+    /*}*/
+    /*#submit{*/
+        /*width:calc(100% / 2);*/
+    /*}*/
+    /*input[type=text],#birthday {*/
+        /*width:calc(100% / 2);*/
+        /*margin-left: 13%;*/
+    /*}*/
+    /*label{*/
+        /*display: block;*/
+        /*color: blue;*/
+        /*margin-left: 15%;*/
+    /*}*/
+/*}*/
+/*!*....................yunnes............*!*/
+/*@media only screen and (max-width:768px ){*/
+    /*#wrapper{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.ecrire{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.col-9{*/
+        /*border-radius: 5px;*/
+        /*background-color: #f2f2f2;*/
+        /*padding: 20px;*/
+        /*margin-left: 13%;*/
+        /*margin-right: 13%;*/
+    /*}*/
+    /*#submit{*/
+        /*width: 70%;*/
+        /*margin-left: 10%;*/
+    /*}*/
+    /*input[type=text] {*/
+        /*width:calc(100% / 2);*/
+    /*}*/
 
 
-    label{
-        display: block;
-        color: lightcoral;
-        margin-left: 15%;
-    }
-    section{
-        margin-left: 30%;
-    }
+    /*label{*/
+        /*display: block;*/
+        /*color: lightcoral;*/
+        /*margin-left: 15%;*/
+    /*}*/
+    /*section{*/
+        /*margin-left: 30%;*/
+    /*}*/
 
-}
+/*}*/
 
 .open_menu {
     transform: scale(1);
