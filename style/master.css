@@ -7,6 +7,11 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+em.seo, strong.seo {
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   background: white;
 }
@@ -443,6 +448,14 @@ footer div.horaires p {
 		margin: 10%;
 	}
     /*fin partie reponsive pour la page acceuil*/
+
+    /*...........reponsive contacte................*/
+
+    div.col-9 #form {
+        width: 100%;
+    }
+
+
     /* ....RESPONSIVE FOOTER DERVYS...*/
     div#slider {
         display: none;
@@ -572,7 +585,7 @@ div.fr_conect form {
     background-color: rgba(0, 59, 100, 0.5);
     width: 50%;
     margin: auto;
-    padding: 2% 0;
+    padding: 2%;
     text-align: -webkit-center;
 }
 div.fr_conect form h2 {
@@ -580,6 +593,7 @@ div.fr_conect form h2 {
     width: 50%;
 
 }
+
 
 div.fr_conect form label {
     display: inline-block;
@@ -600,63 +614,63 @@ div.fr_conect input#coment {
     display: inherit;
 }
 
-@media only screen and (max-width: 960px){
-    #wrapper{
-        width: 100%;
-    }
-    .col-9{
-        border-radius: 5px;
-        background-color: #003B64;
-        padding: 20px;
+/*@media only screen and (max-width: 960px){*/
+    /*#wrapper{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.col-9{*/
+        /*border-radius: 5px;*/
+        /*background-color: #003B64;*/
+        /*padding: 20px;*/
 
-    }
-    #submit{
-        width:calc(100% / 2);
-    }
-    input[type=text],#birthday {
-        width:calc(100% / 2);
-        margin-left: 13%;
-    }
-    label{
-        display: block;
-        color: blue;
-        margin-left: 15%;
-    }
-}
-/*....................yunnes............*/
-@media only screen and (max-width:768px ){
-    #wrapper{
-        width: 100%;
-    }
-    .ecrire{
-        width: 100%;
-    }
-    .col-9{
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-left: 13%;
-        margin-right: 13%;
-    }
-    #submit{
-        width: 70%;
-        margin-left: 10%;
-    }
-    input[type=text] {
-        width:calc(100% / 2);
-    }
+    /*}*/
+    /*#submit{*/
+        /*width:calc(100% / 2);*/
+    /*}*/
+    /*input[type=text],#birthday {*/
+        /*width:calc(100% / 2);*/
+        /*margin-left: 13%;*/
+    /*}*/
+    /*label{*/
+        /*display: block;*/
+        /*color: blue;*/
+        /*margin-left: 15%;*/
+    /*}*/
+/*}*/
+/*!*....................yunnes............*!*/
+/*@media only screen and (max-width:768px ){*/
+    /*#wrapper{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.ecrire{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.col-9{*/
+        /*border-radius: 5px;*/
+        /*background-color: #f2f2f2;*/
+        /*padding: 20px;*/
+        /*margin-left: 13%;*/
+        /*margin-right: 13%;*/
+    /*}*/
+    /*#submit{*/
+        /*width: 70%;*/
+        /*margin-left: 10%;*/
+    /*}*/
+    /*input[type=text] {*/
+        /*width:calc(100% / 2);*/
+    /*}*/
 
 
-    label{
-        display: block;
-        color: lightcoral;
-        margin-left: 15%;
-    }
-    section{
-        margin-left: 30%;
-    }
+    /*label{*/
+        /*display: block;*/
+        /*color: lightcoral;*/
+        /*margin-left: 15%;*/
+    /*}*/
+    /*section{*/
+        /*margin-left: 30%;*/
+    /*}*/
 
-}
+/*}*/
 
 
 
