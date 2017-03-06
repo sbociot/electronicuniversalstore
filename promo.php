@@ -12,7 +12,7 @@ require_once'acces/acces_serv.php';
             <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>">
                 <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
                 <div class="slider_droit">
-                    <h3><?= utf8_encode($article['nom'])?></h3>
+                    <h3><strong><?= utf8_encode($article['nom'])?></strong></h3>
                     <h4>Prix:</h4>
                     <p><?= $article['prix']?></p>
                     <h2><?= utf8_encode ($article['economiser'])?></h2>
