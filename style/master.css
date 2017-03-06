@@ -31,6 +31,7 @@ body {
   margin-left: 5%;
   background: #003B64;
 }
+
 .header_wrapper li {
   display: inline-block;
 }
@@ -64,14 +65,47 @@ margin-right: 30%;
     margin-right: 10px;
 }
 
+/*formulaire login and logout Steve*/
+.login_user {
+    width: 50%;
+    transition: .4s ease;
+    transform: scale(0);
+    transform-origin: top left;
+}
+.login_user_scaleUpDown{
+    transform: scale(1);
 
+}
+.login_user > input[type=text],
+.login_user > input[type=password],
+.login_user > input[type=submit] {
+    width: 100%;
+}
+
+.user_login_container { /*l'image de log_in*/
+    width: 20%;
+    vertical-align: middle;
+    cursor:pointer;
+    margin-left: 5%;
+
+}
+.header_wrapper li:nth-of-type(2) {
+    margin-left: 36%;
+    vertical-align: text-top;
+}
+.header_wrapper li:nth-of-type(2)>span {
+    color: white;
+    display: block;
+}
+
+/*fin formulaire Steve*/
 /*Les aubaiones par categorie*/
 
 .image_categorie {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: white;
+    background-color: #f6f6f5;
 }
 
 .categorie_icon {
@@ -289,7 +323,8 @@ footer div.social {
 
 
 footer h2 {
-  padding-top: 2px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 
@@ -310,9 +345,7 @@ footer li {
     padding: 2px;
 }
 
-
-
-footer div.coordonees a{
+footer div.coordonees a {
     margin: 5% auto;
 }
 
@@ -337,6 +370,16 @@ footer div.social ul#apli li:hover {
 
 }
 
+
+
+footer div.social ul#apli li:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+
+}
 
 footer div.social ul#apli li img {
     width: 30px;
@@ -395,15 +438,29 @@ footer div.horaires p {
 
 /*page formulaire */
 
+.footer{
+    display: block;
+}
 
 
+/*formulaire page service*/
 
+#submit {
+    width: 30%;
+    background-color: #003B64;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-
-
-/*................younes contacte..................*/
-
-div.col-9{
+#submit:hover {
+    background-color: #003B64;
+}
+.col-9{
     width: 90%;
     margin: auto auto 3%;
     border-radius: 5px;
@@ -536,6 +593,26 @@ div.fr_conect input#coment {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    .col-9 {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        /*margin-left: 13%;*/
+        /*margin-right: 13%;*/
+    }
+
+    #submit {
+        width: calc(100% / 2);
+    }
+
+    input[type=text], #birthday {
+        width: calc(100% / 2);
+        margin-left: 13%;
+    }
+
+  label {
+  }
     /*.................menu hamburger.....................*/
 
     .menu-btn {
@@ -625,63 +702,7 @@ div.fr_conect input#coment {
     }
 }
 
-/*@media only screen and (max-width: 960px){*/
-    /*#wrapper{*/
-        /*width: 100%;*/
-    /*}*/
-    /*.col-9{*/
-        /*border-radius: 5px;*/
-        /*background-color: #003B64;*/
-        /*padding: 20px;*/
 
-    /*}*/
-    /*#submit{*/
-        /*width:calc(100% / 2);*/
-    /*}*/
-    /*input[type=text],#birthday {*/
-        /*width:calc(100% / 2);*/
-        /*margin-left: 13%;*/
-    /*}*/
-    /*label{*/
-        /*display: block;*/
-        /*color: blue;*/
-        /*margin-left: 15%;*/
-    /*}*/
-/*}*/
-/*!*....................yunnes............*!*/
-/*@media only screen and (max-width:768px ){*/
-    /*#wrapper{*/
-        /*width: 100%;*/
-    /*}*/
-    /*.ecrire{*/
-        /*width: 100%;*/
-    /*}*/
-    /*.col-9{*/
-        /*border-radius: 5px;*/
-        /*background-color: #f2f2f2;*/
-        /*padding: 20px;*/
-        /*margin-left: 13%;*/
-        /*margin-right: 13%;*/
-    /*}*/
-    /*#submit{*/
-        /*width: 70%;*/
-        /*margin-left: 10%;*/
-    /*}*/
-    /*input[type=text] {*/
-        /*width:calc(100% / 2);*/
-    /*}*/
-
-
-    /*label{*/
-        /*display: block;*/
-        /*color: lightcoral;*/
-        /*margin-left: 15%;*/
-    /*}*/
-    /*section{*/
-        /*margin-left: 30%;*/
-    /*}*/
-
-/*}*/
 
 
 

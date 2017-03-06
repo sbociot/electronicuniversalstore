@@ -70,8 +70,8 @@
         </table>
         <p>© 2017, Electronic Universal Store / Tous droits réservés.</p>
     </div>
-
-
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../script/main.js"></script>
 </body>
 </html>
