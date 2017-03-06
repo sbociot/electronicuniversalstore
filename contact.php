@@ -170,8 +170,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
         </form>
     </div>
 </div>
-<div class="footer">
-    <?php
+<?php
     require_once 'base/footer.php';
-    ?>
-</div>
+?>
+
