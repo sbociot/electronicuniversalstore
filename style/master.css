@@ -47,7 +47,7 @@ body {
 /*fin header*/
 /*responsive menu*/
 #one, #two, #three {
-    background: black;
+    background: #003B64;
     width: 42px;
     height: 5px;
     margin-bottom: 5px;
@@ -622,6 +622,13 @@ div.fr_conect input#coment {
     .responsive_menu {
         display: block;
     }
+    /*HEADER*/
+    .barner {
+        width: 19%;
+    }
+    .barner img {
+        width: 65%;
+    }
     .menu_container {
         width: 90%;
         margin-left: 5%;
@@ -632,7 +639,7 @@ div.fr_conect input#coment {
     }
 
     .menu_container li {
-
+        border-bottom: 1px solid #003B64;
         width:100%;
         text-align: center;
 
