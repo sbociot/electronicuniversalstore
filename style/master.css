@@ -105,7 +105,7 @@ margin-right: 30%;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #f6f6f5;
+    background-color: white;
 }
 
 .categorie_icon {
@@ -438,9 +438,6 @@ footer div.horaires p {
 
 /*page formulaire */
 
-.footer{
-    display: block;
-}
 
 
 /*formulaire page service*/
@@ -593,26 +590,6 @@ div.fr_conect input#coment {
         margin-left: 5%;
         margin-right: 5%;
     }
-
-    .col-9 {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        /*margin-left: 13%;*/
-        /*margin-right: 13%;*/
-    }
-
-    #submit {
-        width: calc(100% / 2);
-    }
-
-    input[type=text], #birthday {
-        width: calc(100% / 2);
-        margin-left: 13%;
-    }
-
-  label {
-  }
     /*.................menu hamburger.....................*/
 
     .menu-btn {
@@ -664,12 +641,18 @@ div.fr_conect input#coment {
     }
     div.invalid label {
         width: 100%;
+        display: block;
     }
     div.invalid input {
         width: 100%;
+        display: block;
     }
 
+    /*..........RESPONSIVE SERVICES.......*/
 
+    div.fr_conect form {
+        width: 100%;
+    }
     /* ....RESPONSIVE FOOTER DERVYS...*/
     div#slider {
         display: none;
