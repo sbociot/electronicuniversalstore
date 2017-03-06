@@ -6,7 +6,7 @@ define('ARTICLE_IMG_PATH', 'images/');
   <head>
     <meta charset="utf-8">
     <title>Electronic Universal Store | Acceuil</title>
-    <meta name="description" content="Electronic Universal Store |  Montreal | Notre mission | Magasin d'électronique en ligne | Ventes Ordinateur, Jeux, Téléphon, Audio, Mobilier de Bureau, Camara, Laptop, Moniteur, Software, Electro-Maison . Financement disponible sur place">
+    <meta name="description" content="Electronic Universal Store | Montreal | Magasin d'électronique | Ventes Ordinateur, Jeux, Téléphon, Audio, Mobilier-Bureau, Camara, Laptop, Moniteur, Software, Electro-Maison">
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <meta name="robots" content="index,follow" >
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">

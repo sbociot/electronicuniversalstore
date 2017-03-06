@@ -16,7 +16,6 @@ require_once'acces/acces_serv.php';
                     <h4>Prix:</h4>
                     <p><?= $article['prix']?></p>
                     <h2><?= utf8_encode ($article['economiser'])?></h2>
-
         </div>
         </a>
     </figure>
