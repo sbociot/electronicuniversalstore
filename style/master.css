@@ -582,6 +582,15 @@ div.fr_conect input#coment {
     div.col-9 #form {
         width: 100%;
     }
+    div.invalid {
+        width: 90%;
+    }
+    div.invalid label {
+        width: 100%;
+    }
+    div.invalid input {
+        width: 100%;
+    }
 
 
     /* ....RESPONSIVE FOOTER DERVYS...*/
