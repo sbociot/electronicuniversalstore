@@ -17,7 +17,7 @@
 define('PS_PANIER','panier'); // Nom du panier en session
 define('PS_PANIER_ITEM_QTY','qty'); // Qté article dans le panier
 define('PS_PANIER_ITEM_NAME','desc'); // Nom pour l'utilisateur
-
+define('PS_PANIER_ITEM_IMAGE','img');
 
 // Création du panier s'il n'existe pas
 if ( ! array_key_exists(PS_PANIER, $_SESSION)) {
@@ -43,12 +43,14 @@ function panier_get_count() {
 if (array_key_exists('panier_add', $_POST) && array_key_exists('article_id', $_POST) && array_key_exists('article_name', $_POST)) {
     $article_id = $_POST['article_id'];
     $article_name = $_POST['article_name'];
+    $article_image = $_POST['article_image'];
     if (array_key_exists($article_id, $panier)) {
         $panier[$article_id][PS_PANIER_ITEM_QTY]++;
     } else {
         $panier[$article_id] = array(
             PS_PANIER_ITEM_QTY => 1,
-            PS_PANIER_ITEM_NAME => $article_name
+            PS_PANIER_ITEM_NAME => $article_name,
+            PS_PANIER_ITEM_IMAGE => $article_image,
         );
     }
 } else if (array_key_exists('panier_remove', $_POST) && array_key_exists('article_id', $_POST)) {
@@ -60,4 +62,4 @@ if (array_key_exists('panier_add', $_POST) && array_key_exists('article_id', $_P
     $panier = array();
 }
 
-//var_dump($panier);
+

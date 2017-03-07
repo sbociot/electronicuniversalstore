@@ -53,6 +53,15 @@ body {
 .login_user input[type=submit] {
     width:51%;
 }
+.panier_count {
+    position: absolute;
+    margin-left: 5%;
+    background: white;
+    color: navy;
+    border-radius: 20px;
+    width: 23px;
+    text-align: center;
+}
 /*fin header*/
 /*responsive menu*/
 #one, #two, #three {
@@ -208,6 +217,46 @@ margin-right: 32.5%;
 .aubaine_choix_user:hover {
     background:#F5F5F5;
     cursor: pointer;
+}
+/*panier View Steve*/
+.panier_image {
+    width: 20%;
+}
+
+.panier td, .panier th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    width: 20%;
+}
+.panier td {
+    color: white;
+}
+.panier tr:nth-child(even) {
+    background-color: #003B64;
+}
+.panier tr:nth-child(odd) {
+    background: #dddddd;
+    color: black;
+}
+.panier_table {
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5% ;
+}
+/*submit du panier pour le vider*/
+.panier_action:nth-of-type(2) input[type=submit] {
+    background: #003B64;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    margin-left: 87.3%;
+    text-transform: uppercase;
+}
+.empty_cart {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
 }
 /*...............DERVYS....SLIDER..................*/
 
@@ -531,7 +580,7 @@ footer div.horaires p {
     }
 }
 
->>>>>>> e444f5ad602edf6ed7ca2d1f9cf9a1aae65d43c4
+
 
 /*................younes contacte..................*/
 

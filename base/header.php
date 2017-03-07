@@ -1,6 +1,7 @@
 <?php
 define('ARTICLE_IMG_PATH', 'images/');
 require_once 'check_connect.php';
+require_once 'panier.php';
  ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -47,6 +48,7 @@ require_once 'check_connect.php';
           </div>
           <div class="barner">
               <a href="panier_view.php">
+                  <p class="panier_count"><?= panier_get_count() ?></p>
               <img class="logo" src="<?=ARTICLE_IMG_PATH?>online-store.png" alt="Electronic Universal Store">
               </a>
           </div>

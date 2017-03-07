@@ -2,8 +2,8 @@
  require_once 'base/header.php';
  require_once 'base/menu.php';
  require_once 'acces/acces_serv.php';
-require_once 'panier.php';
- /*var_dump($aubainesCategorie);*/
+ require_once 'panier.php';
+
 
  // var_dump($_GET['aubaine']);
  // var_dump($data);
@@ -27,6 +27,7 @@ require_once 'panier.php';
                         <input type="submit" name="panier_add" value="Ajouter"/>
                         <input type="hidden" name="article_id" value="<?=$key?>"/>
                         <input type="hidden" name="article_name" value="<?=utf8_encode($value['nom'])?>"/>
+                        <input type="hidden" name="article_image" value="<?=utf8_encode($value['image'])?>"/>
                     </form>
                 </div>
             <?php }else foreach ($categories as $key => $value){
