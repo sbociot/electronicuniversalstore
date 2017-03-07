@@ -9,7 +9,7 @@ require_once'acces/acces_serv.php';
     <?php foreach ($categories as $id => $article) { ?>
         <figure>
             <a href="aubaine_choix.php?=promo=<?= utf8_encode($article['nom'])?>">
-                <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
+                <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt="<?= utf8_encode($article['nom'])?>"/>
                 <div class="slider_droit">
                     <h3><strong><?= utf8_encode($article['nom'])?></strong></h3>
                     <h4>Prix:</h4>

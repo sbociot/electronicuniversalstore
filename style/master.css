@@ -207,8 +207,10 @@ div.promo_carrusel div#slider figure { /*faire floter les imagen */
     position: relative;
     width: 5%;
     height: 230px;
-    padding: 5px;
+    /*padding: 5px;*/
     float: left;
+    /*margin: auto;*/
+    text-align: center;
 
 }
 div.promo_carrusel div#slider a {
