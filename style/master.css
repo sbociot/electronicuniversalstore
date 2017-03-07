@@ -58,11 +58,20 @@ body {
   color: #4D4D4F;
 }
 
+/* PARLER A STEVE...*/
+/*.menu_container {*/
+
+  /*width: 35%;*/
+/*margin-left: 32.5%;*/
+/*margin-right: 32.5%;*/
+/*}*/
+
 .menu_container {
-  width: 35%;
-margin-left: 32.5%;
-margin-right: 32.5%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
+
 
 .menu_container li:not(:first-of-type) {
     margin-right: 10px;
@@ -271,7 +280,7 @@ div.promo_carrusel div#slider div.slider_droit h2 {
 footer {
     background-color: #003B64;
     width: 90%;
-    min-height: 360px;
+    min-height: 300px;
     margin: 0 auto;
     font-size: 12px;
     color: white;
@@ -439,18 +448,19 @@ div.invalid {
     margin: auto;
 }
 
-div.invalid label{
+div.invalid label,div.invalidinvalid label{
     display: inline-block;
     width: 13%;
 }
 
-div.invalid p {
+div.invalidinvalid p {
     width: 70%;
     margin: auto;
-    font-size: small;
+    font-size: 12px;
+    color: white;
 }
 
-div.invalid input {
+div.invalid input,div.invalidinvalid input {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -544,13 +554,129 @@ div.fr_conect input#coment {
     display: inherit;
 }
 
-
-/*Partie responsive page acceuil*/
-@media only screen and (max-width: 414px)  {
+/*.........Partie responsive tablette.............*/
+@media only screen and  (max-width:768px) {
 
     .responsive_menu {
-        display: block;
+        width: 100%;
     }
+
+    ul.menu_container {
+        width: 100%;
+    }
+
+    /*ul.herder_menu li  {*/
+        /*width: 20%;*/
+        /*margin: 2px auto;*/
+    /*}*/
+
+    /*div#slider {*/
+        /*width: 100%;*/
+    /*}*/
+
+    #main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .bloc {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        width: 95%;
+        padding: 5px;
+    }
+
+    /*....RESPONSIVE SLIDER....*/
+
+    div.promo_carrusel div#slider figure {
+        text-align: center;
+    }
+
+    div.promo_carrusel div#slider img {
+        width: 50%;
+        height: 40%;
+    }
+
+    div.promo_carrusel div#slider div.slider_droit {
+        display: inline-block;
+        width: 100%;
+    }
+    div.promo_carrusel div#slider div.slider_droit h2 {
+        /*display: inline-block;*/
+        width: 70%;
+        font-size: 12px;
+        margin: auto;
+    }
+    div.promo_carrusel div#slider div.slider_droit h3,h4,p {
+        display: none;
+    }
+
+
+/* ...REPONSUVE PARTI CATEGORIES...*/
+
+    .image_categorie h1 {
+        font-size: 18px;
+    }
+
+    .image_categorie .categorie_icon {
+        width: 39%;
+    }
+
+    /* ...REPONSUVE PARTI contacte...*/
+
+    div.col-9 #form {
+        width: 100%;
+    }
+
+    div.invalid p {
+        font-size: 8px;
+    }
+
+    div.invalid select#ville {
+        width: 80%;
+    }
+
+    div.invalid label#code {
+        width: 25%;
+        margin: 0;
+    }
+    div.invalid input#idcode_postal {
+        width: 68%;
+    }
+
+    div.submit {
+        margin-left: 45%;
+    }
+    input#submit {
+        width: 100%;
+        margin: auto;
+    }
+
+    div.fr_conect form {
+        width: 100%;
+    }
+
+    footer p,li,tr {
+        font-size: 10px;
+    }
+    footer div.social ul#apli li {
+        width: 100%;
+    }
+
+    footer div.horaires table {
+        margin-top: 10%;
+    }
+    footer div.horaires p {
+        margin-top: 20%;
+    }
+
+}
+/*.........Partie responsive cell.............*/
+@media only screen and (max-width: 414px)  {
+
     /*HEADER*/
     .barner {
         width: 19%;
@@ -558,6 +684,11 @@ div.fr_conect input#coment {
     .barner img {
         width: 65%;
     }
+
+    .responsive_menu {
+        display: block;
+    }
+
     .menu_container {
         width: 90%;
         margin-left: 5%;
@@ -580,17 +711,63 @@ div.fr_conect input#coment {
         width: 28%;
         margin: 10%;
     }
-    .image_categorie .categorie_icon{
-        margin: 10%;
+
+    .image_categorie h1 {
+        font-size: 14px;
     }
+    /*.image_categorie .categorie_icon{*/
+        /*margin: 10%;*/
+    /*}*/
+
     /*fin partie reponsive pour la page acceuil*/
-    /* ....RESPONSIVE FOOTER DERVYS...*/
+    /* ....RESPONSIVE SLIDER DERVYS...*/
     div#slider {
         display: none;
     }
+
+    div.col-9 #form {
+        width: 100%;
+        padding: 0;
+    }
+
+    div.invalid {
+        width: 90%;
+    }
+
+    div.invalid label,div.invalid input {
+        width: 100%;
+    }
+
+    div.invalid select#ville {
+        width: 100%;
+    }
+
+    div.invalid label#code {
+        width: 100%;
+    }
+    div.invalid input#idcode_postal {
+        width: 100%;
+    }
+
+    div.submit {
+        width: 50%;
+    }
+    input#submit {
+        width: 100%;
+    }
+
+    div.fr_conect input#coment {
+        width: 20%;
+    }
+
+     /* ....RESPONSIVE FOOTER DERVYS...*/
+
     footer div.coordonees {
         width: 100%;
 
+    }
+    footer p,li,tr {
+        font-size: 8px;
     }
 
     footer div.coordonees h2 {
@@ -608,12 +785,18 @@ div.fr_conect input#coment {
     footer div.horaires {
         width: 100%;
         text-align: center;
-        height: auto;
+        /*height: auto;*/
+    }
+
+    footer div.horaires table {
+        margin-top: auto;
     }
 
     footer div.horaires p {
         margin-top: 5px;
+
     }
+
 }
 
 
