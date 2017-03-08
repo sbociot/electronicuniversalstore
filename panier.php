@@ -49,6 +49,7 @@ if (array_key_exists('panier_add', $_POST) && array_key_exists('article_id', $_P
     $article_id = $_POST['article_id'];
     $article_name = $_POST['article_name'];
     $article_image = $_POST['article_image'];
+    $article_prix = $_POST['article_prix'];
     if (array_key_exists($article_id, $panier)) {
         $panier[$article_id][PS_PANIER_ITEM_QTY]++;
     } else {
@@ -56,6 +57,7 @@ if (array_key_exists('panier_add', $_POST) && array_key_exists('article_id', $_P
             PS_PANIER_ITEM_QTY => 1,
             PS_PANIER_ITEM_NAME => $article_name,
             PS_PANIER_ITEM_IMAGE => $article_image,
+            PS_PANIER_ITEM_PRIX => $article_prix,
         );
     }
 } else if (array_key_exists('panier_remove', $_POST) && array_key_exists('article_id', $_POST)) {

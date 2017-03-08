@@ -28,6 +28,7 @@
                         <input type="hidden" name="article_id" value="<?=$key?>"/>
                         <input type="hidden" name="article_name" value="<?=utf8_encode($value['nom'])?>"/>
                         <input type="hidden" name="article_image" value="<?=utf8_encode($value['image'])?>"/>
+                        <input type="hidden" name="article_prix" value="<?=utf8_encode($value['prix'])?>"/>
                     </form>
                     <a href="details.php?details=<?=$key?>">Plus D'infos</a>
                 </div>
@@ -42,6 +43,7 @@
                             <input type="hidden" name="article_id" value="<?=$key?>"/>
                             <input type="hidden" name="article_name" value="<?=utf8_encode($value['nom'])?>"/>
                             <input type="hidden" name="article_image" value="<?=$value['image']?>"/>
+                            <input type="hidden" name="article_prix" value="<?=$value['prix']?>"/>
                         </form>
                     </div>
                 <?php }
