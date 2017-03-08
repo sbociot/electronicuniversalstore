@@ -27,4 +27,11 @@ define('ICON_PATH', 'images/icons/');
 </div>
 
 <?php require_once'base/footer.php';?>
-
+<script type="text/javascript">
+    //menu mobile
+    jQuery(function($){
+        $( '.menu-btn' ).click(function(){
+            $('.menu_container').toggleClass('expand')
+        })
+    })
+</script>

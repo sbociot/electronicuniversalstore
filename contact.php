@@ -171,6 +171,6 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
     </div>
 </div>
 <?php
-    require_once 'base/footer.php';
+    require_once'base/footer.php';
 ?>
 
