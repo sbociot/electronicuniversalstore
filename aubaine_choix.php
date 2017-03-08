@@ -18,7 +18,7 @@
             }  ?></h1>
         <?php
         foreach ($aubainesCategorie as $key => $value) {
-            if (array_key_exists('aubaine', $_GET) && in_array($_GET['aubaine'], $value)) {?>
+            if (array_key_exists('aubaine', $_GET) && in_array($_GET['aubaine'], $value)){?>
                 <div class="aubaine_choix_user">
                     <h2><?=$value['nom']?></h2>
                     <img src="<?= ARTICLE_IMG_PATH,$value['image']?>" alt="<?=$value['nom']?>"/>
@@ -29,6 +29,7 @@
                         <input type="hidden" name="article_name" value="<?=utf8_encode($value['nom'])?>"/>
                         <input type="hidden" name="article_image" value="<?=utf8_encode($value['image'])?>"/>
                     </form>
+                    <a href="details.php?details=<?=$key?>">Plus D'infos</a>
                 </div>
             <?php }else foreach ($categories as $key => $value){
                 if(array_key_exists('promo' , $_GET) && in_array($_GET['promo'] , $value)){?>
@@ -40,6 +41,7 @@
                             <input type="submit" name="panier_add" value="Ajouter"/>
                             <input type="hidden" name="article_id" value="<?=$key?>"/>
                             <input type="hidden" name="article_name" value="<?=utf8_encode($value['nom'])?>"/>
+                            <input type="hidden" name="article_image" value="<?=$value['image']?>"/>
                         </form>
                     </div>
                 <?php }

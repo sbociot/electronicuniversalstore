@@ -1,5 +1,6 @@
 <?php
 require_once'acces/acces_serv.php';
+require_once 'panier.php';
 // var_dump($categories);
 
 ?>

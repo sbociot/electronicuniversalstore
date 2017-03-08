@@ -32,6 +32,7 @@ require_once 'base/menu.php';
         <form class="panier_action" method="post">
             <input type="submit" name="panier_empty" value="Vider le panier" />
         </form>
+        <a href="contact.php?=choix<?= $article_id?>">Acheter</a>
     <?php } else {  ?>
         <p class="empty_cart">!Votre panier est vide.</p>
         <p class="empty_cart"><a href="shop.php">Notre Catalogue</a></p>

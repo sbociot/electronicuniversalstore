@@ -18,6 +18,11 @@ define('PS_PANIER','panier'); // Nom du panier en session
 define('PS_PANIER_ITEM_QTY','qty'); // Qté article dans le panier
 define('PS_PANIER_ITEM_NAME','desc'); // Nom pour l'utilisateur
 define('PS_PANIER_ITEM_IMAGE','img');
+define('PS_PANIER_ITEM_PRIX','prix');
+define('PS_PANIER_ITEM_DESCRIPTION','DESCRIPTION');
+define('PS_PANIER_ITEM_DESCRIPTION_1','description_1');
+define('PS_PANIER_ITEM_DESCRIPTION_2','description_1');
+define('PS_PANIER_ITEM_DESCRIPTION_3','description_1');
 
 // Création du panier s'il n'existe pas
 if ( ! array_key_exists(PS_PANIER, $_SESSION)) {

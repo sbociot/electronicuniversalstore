@@ -8,6 +8,14 @@ require_once 'panier.php';
   <head>
     <meta charset="utf-8">
     <title>Electronic Universal Store | Acceuil</title>
+      <!--[if IE 8]>
+      <script type="text/javascript">
+          // this is only executed for IE 8
+      </script>
+      <![endif]-->
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
     <meta name="description" content="Electronic Universal Store | Montreal | Magasin d'électronique | Ventes Ordinateur, Jeux, Téléphon, Audio, Mobilier-Bureau, Camara, Laptop, Moniteur, Software, Electro-Maison">
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <meta name="robots" content="index,follow" >

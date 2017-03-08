@@ -1,5 +1,4 @@
 <footer>
-
     <div class="coordonees">
         <h2><span itemprop="name">NOUS COORDONNÉES</span></h2>
         <h4>Electronic Universal Store</h4>
@@ -8,7 +7,7 @@
             <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
             <li><span itemprop="postalCode">H2M 1M2</span></li>
             <li><span itemprop="telephone">514 842-2426</span></li>
-            <li><span itemprop="email">info@centre-dentaire-de-l-est.com</span></li>
+            <li><span itemprop="email">info@elecetronic-universal-store.com</span></li>
         </ul>
         <a href="https://goo.gl/maps/nUuwptRP9mH2">
             <iframe
@@ -70,8 +69,6 @@
         </table>
         <p>© 2017, Electronic Universal Store / Tous droits réservés.</p>
     </div>
-
-
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="../script/main.js"></script>
